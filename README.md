@@ -1,4 +1,4 @@
-# ITI0209-2022. Movie streaming services
+-# ITI0209-2022. Movie streaming services
 
 # Briif #
 
@@ -32,3 +32,17 @@ Since all people are annoyed by ads, especially those that interfere with the ac
 [Mobile version](https://www.figma.com/file/SzeQgL9AqbgdL8SKFJ5zmv/mobile-version?node-id=0%3A1)
 
 [Desktop version](https://www.figma.com/file/ZHNbsLfdZyb7we6HvND9gR/desktop-version?node-id=7%3A22)
+
+
+# Testing #
+**1 person:**
+
+**Advantage:**
+
+Registration and access to movies are generally convenient.
+
+**Disadvantages:**
+- transfer to the paypal login page must be done manually (a.k.a. it would be possible to avoid clicking on the second link after the first redirect)
+- part of the site’s functionality is hidden under default browser buttons (probably due to the size of the device)
+- strange visual bug in the form of a flag that always hangs in one parts of the screen and annoying
+
