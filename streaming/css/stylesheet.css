@@ -157,12 +157,20 @@ body {
   top: 147px;
 }
 
-#phoneIcon{
+#stepIcon{
   position: absolute;
   width: 53px;
   height: 54px;
   left: 686px;
   top: 193px;
+}
+
+#submitIcon{
+  position: absolute;
+  left: 45.73%;
+  right: 49.72%;
+  top: 28.97%;
+  bottom: 75.49%;
 }
 
 .stepP {
@@ -196,5 +204,246 @@ body {
   text-align: center;
 
   color: #FFFFFF;
+}
+
+
+#paymentBtn1{
+  position: absolute;
+  width: 545px;
+  height: 85px;
+  left: 445px;
+  top: 507px;
+
+  background: #FFC700;
+  border-radius: 10px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: left;
+}
+
+#arrowIcon1{
+  position: absolute;
+  width: 55px;
+  height: 50.07px;
+  left: 930px;
+  top: 522px;
+}
+
+#paymentBtn2{
+  position: absolute;
+  width: 545px;
+  height: 85px;
+  left: 449px;
+  top: 657px;
+
+  background: #FFC700;
+  border-radius: 10px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: left;
+}
+
+#arrowIcon2 {
+  position: absolute;
+  width: 55px;
+  height: 50.07px;
+  left: 930px;
+  top: 675.93px;
+}
+
+#stepPayment {
+  position: absolute;
+  width: 112px;
+  height: 23px;
+  left: 658px;
+  top: 91px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #FFC700;
+}
+
+
+#stepPaymentText {
+  position: absolute;
+  width: 666px;
+  height: 56px;
+  left: 387px;
+  top: 118px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+
+#firstNameInput{
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  width: 361px;
+  height: 51px;
+  left: 565px;
+  top: 264px;
+}
+
+#lastNameInput{
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  width: 361px;
+  height: 51px;
+  left: 565px;
+  top: 329px;
+}
+
+#cardNumberInput {
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  width: 361px;
+  height: 51px;
+  left: 565px;
+  top: 394px;
+}
+
+#expirationDateInput{
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  width: 361px;
+  height: 51px;
+  left: 565px;
+  top: 459px;
+}
+
+#cvvInput{
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  width: 361px;
+  height: 51px;
+  left: 565px;
+  top: 524px;
+}
+
+#firstNameInput::placeholder, #lastNameInput::placeholder, #cardNumberInput::placeholder, #expirationDateInput::placeholder, #cvvInput::placeholder{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.71) 
+}
+
+#visa{
+  position: absolute;
+  width: 51px;
+  height: 45px;
+  left: 568px;
+  top: 207px;
+  z-index: 3;
+}
+
+#visaRectangle{
+  position: relative;
+  width: 60px;
+  height: 38px;
+  left: 565px;
+  top: 210px;
+  z-index: 1;
+}
+
+
+#mastercard { 
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 640px;
+  top: 205px;
+  z-index: 3;
+}
+
+#mastercardRectangle{
+  position: absolute;
+  width: 60px;
+  height: 38px;
+  left: 634px;
+  top: 210px;
+  z-index: 1;
+}
+
+
+#agreement{
+  position: absolute;
+  width: 738px;
+  height: 110px;
+  left: 557px;
+  top: 684px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: #FFFFFF;
+}
+
+#submitBtn {
+  position: absolute;
+  width: 250px;
+  height: 84px;
+  left: 618px;
+  top: 876px;
+
+  background: #FFC700;
+  border-radius: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #000000;
+}
+
+
+#price {
+  position: absolute;
+  width: 120px;
+  height: 67px;
+  left: 683px;
+  top: 603px;
+
+  background: #222222;
+  border-radius: 15px;
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #FFC700;
 }
 
