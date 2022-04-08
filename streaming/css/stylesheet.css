@@ -452,9 +452,10 @@ body {
   position: absolute;
   border-color: #FFC700;
   background-color: #3A3A3A;
+  position: absolute;
   width: 548px;
   height: 84px;
-  left: 646px;
+  left: 446px;
   top: 293px;
 
   font-family: 'Roboto';
@@ -472,7 +473,7 @@ body {
   background-color: #3A3A3A;
   width: 548px;
   height: 84px;
-  left: 646px;
+  left: 446px;
   top: 396px;
 
   font-family: 'Roboto';
@@ -489,7 +490,7 @@ body {
   position: absolute;
   width: 170px;
   height: 84px;
-  left: 1025px;
+  left: 824px;
   top: 396px;
 
   background: #FFC700;
@@ -504,13 +505,12 @@ body {
 }
 
 
-#loginBtn{
+#logInBtn{
   position: absolute;
   width: 250px;
   height: 84px;
-  left: 794px;
+  left: 594px;
   top: 601px;
-
   background: #FFC700;
   border-radius: 20px;
 
@@ -534,7 +534,7 @@ body {
 #signupText {
   position: absolute;
   color: #FFFFFF;
-  left: 752px;
+  left: 552px;
   top: 725px;
 }
 
@@ -542,9 +542,487 @@ body {
   position: absolute;
   width: 336px;
   height: 28px;
-  left: 875px;
+  left: 675px;
   top: 718px;
 
   color: #FFC700;
 }
 
+
+.profileIconW {
+  position: absolute;
+  right: 44px;
+  top: 44px;
+}
+
+#accountHeader {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 75px;
+  text-align: center;
+
+  color: #FFC700;
+
+  position: absolute;
+  width: 617px;
+  height: 75px;
+  left: 24px;
+  top: 157px;
+}
+
+
+#homeBtn {
+  position: absolute;
+  width: 97px;
+  height: 42px;
+  left: 204px;
+  top: 52px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #FFFFFF;
+
+  text-decoration: none;
+}
+
+#accountBtn{
+  position: absolute;
+  width: 135px;
+  height: 42px;
+  left: 355px;
+  top: 52px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #FFC700;
+
+  text-decoration: none;
+
+}
+
+#numberText{
+  position: absolute;
+  width: 386px;
+  height: 26px;
+  left: 506px;
+  top: 295px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#cardNumberText {
+  position: absolute;
+  width: 379px;
+  height: 62px;
+  left: 565px;
+  top: 487px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#billingDate {
+  position: absolute;
+  width: 530px;
+  height: 36px;
+  left: 502px;
+  top: 554px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #FF0000;
+}
+
+#phoneChangeBtn {
+  position: absolute;
+  width: 516px;
+  height: 89px;
+  left: 490px;
+  top: 347px;
+
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: left;
+
+  color: rgba(255, 199, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+#phoneChangeBtn:hover {
+  border-color: rgba(255, 199, 0, 1);
+}
+
+#manageBtn {
+  position: absolute;
+  width: 516px;
+  height: 89px;
+  left: 490px;
+  top: 609px;
+
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: left;
+
+  color: rgba(255, 199, 0, 0.8);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+#manageBtn:hover {
+  border-color: rgba(255, 199, 0, 1);
+}
+
+#arrowIcon1Acc {
+  position: absolute;
+  width: 49px;
+  height: 46px;
+  left: 944px;
+  top: 369px;
+}
+
+#arrowIcon2Acc {
+  position: absolute;
+  width: 49px;
+  height: 46px;
+  left: 944px;
+  top: 631px;
+}
+
+#mastercardAcc { 
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 505px;
+  top: 487px;
+  z-index: 3;
+}
+
+#mastercardRectangleAcc {
+  position: absolute;
+  width: 60px;
+  height: 38px;
+  left: 499px;
+  top: 492px;
+  z-index: 1;
+}
+
+
+#cancelMemberBtn{
+  position: absolute;
+  width: 530px;
+  height: 85px;
+  left: 490px;
+  top: 818px;
+
+  background: #FFC700;
+  border-radius: 10px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #000000;
+}
+
+#accountHeaderPhone{
+  position: absolute;
+  width: 1254px;
+  height: 250px;
+  left: 93px;
+  top: 170px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+
+  color: #FFC700;
+}
+
+
+#submitBtnAcc {
+  position: absolute;
+  width: 250px;
+  height: 84px;
+  left: 612px;
+  top: 739px;
+
+  background: #FFC700;
+  border-radius: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #000000;
+}
+
+
+#updatePhoneAccText {
+  position: absolute;
+  width: 600px;
+  height: 53px;
+  left: 420px;
+  top: 272px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #FFFFFF;
+}
+
+#phoneNumberInputAcc {
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  position: absolute;
+  width: 548px;
+  height: 84px;
+  left: 436px;
+  top: 367px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: rgba(255, 255, 255, 0.71);  
+}
+
+#loginCodeInputAcc {
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  width: 548px;
+  height: 84px;
+  left: 436px;
+  top: 470px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: rgba(255, 255, 255, 0.71)
+}
+
+
+#sendCodeAcc {
+  position: absolute;
+  width: 170px;
+  height: 84px;
+  left: 814px;
+  top: 470px;
+
+  background: #FFC700;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #000000;
+}
+
+
+#updatePaymentText{
+  position: absolute;
+  width: 682px;
+  height: 56px;
+  left: 379px;
+  top: 187px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+#visaAcc{
+  position: absolute;
+  width: 51px;
+  height: 45px;
+  left: 545px;
+  top: 281px;
+  z-index: 3;
+}
+
+#visaRectangleAcc{
+  position: relative;
+  width: 60px;
+  height: 38px;
+  left: 542px;
+  top: 284px;
+  z-index: 1;
+}
+
+
+#mastercardAcc { 
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 617px;
+  top: 279px;
+  z-index: 3;
+}
+
+#mastercardRectangleAcc{
+  position: absolute;
+  width: 60px;
+  height: 38px;
+  left: 611px;
+  top: 284px;
+  z-index: 1;
+}
+
+#firstNameInputAcc{
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  width: 361px;
+  height: 51px;
+  left: 542px;
+  top: 338px;
+}
+
+#lastNameInputAcc{
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  width: 361px;
+  height: 51px;
+  left: 542px;
+  top: 403px;
+}
+
+#cardNumberInputAcc {
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  width: 361px;
+  height: 51px;
+  left: 542px;
+  top: 468px;
+}
+
+#expirationDateInputAcc{
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  width: 361px;
+  height: 51px;
+  left: 542px;
+  top: 533px;
+}
+
+#cvvInputAcc{
+  position: absolute;
+  border-color: #FFC700;
+  background-color: #3A3A3A;
+  width: 361px;
+  height: 51px;
+  left: 542px;
+  top: 598px;
+}
+
+#firstNameInputAcc::placeholder, #lastNameInputAcc::placeholder, #cardNumberInputAcc::placeholder, #expirationDateInputAcc::placeholder, #cvvInputAcc::placeholder{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.71) 
+}
+
+#submitBtnAcc {
+  position: absolute;
+  width: 250px;
+  height: 84px;
+  left: 607px;
+  top: 833px;
+
+  background: #FFC700;
+  border-radius: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #000000;
+}
+
+
+#priceAcc {
+  position: absolute;
+  width: 120px;
+  height: 67px;
+  left: 660px;
+  top: 677px;
+
+
+  background: #222222;
+  border-radius: 15px;
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #FFC700;
+}
