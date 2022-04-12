@@ -12,3 +12,12 @@ document.getElementById("accountBtn").onclick = function openAccount() {
         location.href = "account.html";
     };
 }
+
+
+function setPictureYellow() {
+    document.getElementById("profile-dropdown-pic").src = '../images/icons/yellow profile icon.png'
+}
+
+function setPictureWhite() {
+    document.getElementById("profile-dropdown-pic").src = '../images/icons/white profile icon.png'
+}
