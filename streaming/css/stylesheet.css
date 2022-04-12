@@ -2,6 +2,59 @@ body {
   background-color: #3A3A3A;
 }
 
+.navbar-custom {
+  background-color: #3A3A3A;
+}
+
+.nav-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #FFFFFF;
+}
+
+.nav-link:hover {
+  color: #FFC700;
+}
+
+.nav-link:active {
+  color: #FFC700;
+}
+
+
+.dropdown-menu{
+  background: #000000;
+  border-radius: 15px;
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.dropdown-menu a:hover {
+  color: #FFC700;
+  background-color: #000000;
+}
+
+
+.dropdown-item {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.dropdown-toggle:focus{
+  color: #FFFFFF;
+}
+
+.dropdown-divider{
+  border-color: #3A3A3A;
+  
+}
 
 .card-img-top {
   width: 100%;

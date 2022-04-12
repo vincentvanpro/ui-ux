@@ -8,13 +8,13 @@
   <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
 
 
-  <title>Landing page</title>
+  <title>Home</title>
 </head>
 
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm navbar-custom">
   <div class="container">
     <img id="navbar-brand mr-auto" class="img-fluid" src="../images/logo/logo.png" alt="logo">
 
@@ -31,20 +31,30 @@
         </li>
         <li class="nav-item">
           <div class="dropdown">
-            <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Categories</a>
+            <a href="#" id="select" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Categories</a>
             <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Action</a>
-              <a href="#" class="dropdown-item">Comedies</a>
-              <a href="#" class="dropdown-item">Stand-Up</a>
-              <a href="#" class="dropdown-item">Anime</a>
-              <a href="#" class="dropdown-item">Drama</a>
-              <a href="#" class="dropdown-item">Fantasy</a>
-              <a href="#" class="dropdown-item">Blockbusters</a>
-              <a href="#" class="dropdown-item">Horror</a>
-              <a href="#" class="dropdown-item">Children</a>
-              <a href="#" class="dropdown-item">International</a>
-              <a href="#" class="dropdown-item">Documentaries</a>
-              <a href="#" class="dropdown-item">Romance</a>
+              <div class="container container-md" style="width:647px;">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#" class="dropdown-item">Action</a>
+                    <a href="#" class="dropdown-item">Anime</a>
+                    <a href="#" class="dropdown-item">Blockbusters</a>
+                    <a href="#" class="dropdown-item">Children</a>
+                    <a href="#" class="dropdown-item">Documentaries</a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#" class="dropdown-item">Comedies</a>
+                    <a href="#" class="dropdown-item">Drama</a>
+                    <a href="#" class="dropdown-item">Horror</a>
+                    <a href="#" class="dropdown-item">International</a>
+                    <a href="#" class="dropdown-item">Romance</a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#" class="dropdown-item">Stand-Up</a>
+                    <a href="#" class="dropdown-item">Fantasy</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </li>
@@ -70,9 +80,12 @@
             </a>
             <div class="dropdown-menu">
               <a href="#" class="dropdown-item">History</a>
-              <a href="#" class="dropdown-item">Account</a>
+              <div class="dropdown-divider"></div>
+              <a href="account.html" class="dropdown-item">Account</a>
+              <div class="dropdown-divider"></div>
               <a href="#" class="dropdown-item">Help</a>
-              <a href="#" class="dropdown-item">Sign out</a>
+              <div class="dropdown-divider"></div>
+              <a href="index.html" class="dropdown-item">Sign out</a>
             </div>
           </div>
         </li>
