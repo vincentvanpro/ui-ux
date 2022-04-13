@@ -65,7 +65,7 @@
             <ul class="nav">
                 <li>
                     <form action="" class="search-box flex-md-row">
-                        <input type="text" name="search" placeholder="Search" class="search-input" required/>
+                        <input id="userSearch" type="text" name="search" placeholder="Search" class="search-input" required/>
                         <button type="submit">
                             <img class="img-fluid" src="../images/icons/search-white.png" alt="profile icon">
                         </button>
@@ -99,7 +99,8 @@
 <!-- NAVBAR END -->
 
 <!-- Top Search -->
-<div class="topSearchContainer container series">
+<!-- this is shown before entering a query in the search bar-->
+<div id="hide" class="topSearchContainer container series">
     <h3> Top Search </h3>
 
     <div class="post-container">
@@ -237,10 +238,79 @@
 <!-- Top Search END-->
 
 
+<!--- TV Programmes & Films -->
+<!-- this is shown after entering a query "The Lord of the rings" in the search bar-->
+<div id="show" class="container series" style="margin-top:1%">
+    <h3> TV Programmes & Films </h3>
+
+    <div class="post-container">
+        <div class="post-box">
+            <div class="post-img">
+                <img src="../images/desktop ver/search page/film 1.png" class="img-fluid rounded-start" alt="...">
+            </div>
+        </div>
+
+        <div class="post-box">
+            <div class="post-img">
+                <img src="../images/desktop ver/search page/film 2.png" class="img-fluid rounded-start" alt="...">
+            </div>
+        </div>
+
+        <div class="post-box">
+            <div class="post-img">
+                <img src="../images/desktop ver/search page/film 3.png" class="img-fluid rounded-start" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+<!--- TV Programmes & Films END-->
+
+
+<!--- Suggestions -->
+<!-- this is shown after entering a query "The Lord of the rings" in the search bar-->
+<div id="show" class="container series" style="margin-top:1%">
+    <h3> Suggestions </h3>
+
+    <div class="post-container">
+        <div class="post-box">
+            <div class="post-img">
+                <img src="../images/desktop ver/search page/hobbit 1.png" class="img-fluid rounded-start" alt="...">
+            </div>
+        </div>
+
+        <div class="post-box">
+            <div class="post-img">
+                <img src="../images/desktop ver/search page/hobbit 2.png" class="img-fluid rounded-start" alt="...">
+            </div>
+        </div>
+
+        <div class="post-box">
+            <div class="post-img">
+                <img src="../images/desktop ver/search page/hobbit 3.png" class="img-fluid rounded-start" alt="...">
+            </div>
+        </div>
+    </div>
+</div>
+<!--- Suggestions END-->
+
 
 
 <script src="../js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script>
+    $('#userSearch').on("keydown", function value(e) {
+        if (e.keyCode == 13) {
+            e.preventDefault();
+            this.value = "The Lord of the rings";
+            $('#hide').hide();
+            $('#show').show();
+        }
+});
+</script>
 
 </body>
 </html>
