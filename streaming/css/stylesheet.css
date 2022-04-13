@@ -2,6 +2,35 @@ body {
   background-color: #3A3A3A;
 }
 
+.notificationsContainer .card-title {
+  position: absolute;
+}
+.notificationsContainer .card-details-date {
+  padding: 0; margin: 0;
+}
+.notificationsContainer .card-details-duration {
+  padding: 0; margin: 0;
+}
+
+.notificationsContainer .card {
+  background-color: rgb(49, 49, 50);
+  border: none;
+}
+
+.notificationsContainer h5{
+  color: #fdfdfe;
+}
+
+.notifications-h2{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #fdfdfe;
+}
+
 h3 {
   font-family: 'Roboto';
   font-style: normal;
@@ -26,8 +55,8 @@ h4 {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 28px;
 
   color: #FFC700;
 }
