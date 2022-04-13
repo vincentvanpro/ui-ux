@@ -246,6 +246,7 @@
         $('#showSuggestions').hide();
 
     });
+
     $('#userSearch').on("keydown", function value(e) {
         if (e.keyCode == 13) {
             e.preventDefault();
@@ -257,6 +258,17 @@
             $('#showIcon').show();
         }
     });
+
+    $( "#hideIcon" ).click(function(e) {
+        e.preventDefault();
+        $('#userSearch').val("The Lord of the rings"); 
+        $('#hide').hide();
+        $('#showResponse').show();
+        $('#showSuggestions').show();
+        $('#hideIcon').hide();
+        $('#showIcon').show();
+    });
+
     $('#showIcon').click(function(){
         window.location.href='search.html';
     })
