@@ -12,6 +12,59 @@ h3 {
   color: #FFC700;
 }
 
+p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+
+  color: #FFFFFF;
+}
+
+h4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+
+  color: #FFC700;
+}
+
+h5 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #FFC700;
+}
+
+.moviePlayIcon {
+  position: absolute;
+  left: 45%;
+  top: 30%;
+}
+
+.age {
+  margin-left: 3%;
+}
+
+.mainMovieInfo {
+  margin-top: 1%;
+}
+
+.movieHeader{ 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #FFC700;
+ }
 /*NAVBAR*/
 .navbar-custom {
   background-color: #3A3A3A;
@@ -197,6 +250,21 @@ body > .trendingContainer, .continueWatchingContainer, .moviesContainer, .topSea
 
 body > .mylistContainer {
   padding-top: 10px;
+}
+
+.searchForm{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  color: #FFC700;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.searchForm:focus {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
 }
 
 
