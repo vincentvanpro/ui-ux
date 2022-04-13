@@ -42,6 +42,15 @@ h5 {
   color: #FFC700;
 }
 
+.episodeDetails {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #858484;
+}
 .moviePlayIcon {
   position: absolute;
   left: 45%;
