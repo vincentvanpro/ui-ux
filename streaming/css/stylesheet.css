@@ -17,7 +17,83 @@ body {
   border: none;
 }
 
-.notificationsContainer h5{
+.historyContainer .card {
+  background-color: rgb(49, 49, 50);
+  border: none;
+}
+
+.historyContainer .progress {
+  height: 7px;
+}
+
+.progress-bar-history-1 {
+  width: 62%;
+  background-color: #fd0001;
+}
+
+.progress-bar-history-2 {
+  width: 14%;
+  background-color: #fd0001;
+}
+
+.progress-bar-history-3 {
+  width: 100%;
+  background-color: #fd0001;
+}
+
+@media(min-width: 1200px) {
+  .progress-history {
+    position:absolute;
+    bottom:15px;
+    width: 56%;
+  }
+}
+
+
+@media(max-width: 1025px) {
+  .progress-history {
+    position:absolute;
+    bottom:15px;
+    width: 55%;
+  }
+}
+
+@media(max-width: 763px) {
+  .progress-history {
+    position:absolute;
+    bottom:15px;
+    width: 94%;
+  }
+}
+
+@media(max-width: 530px) {
+  .progress-history {
+    position:absolute;
+    bottom:15px;
+    width: 93%;
+  }
+}
+
+@media(max-width: 320px) {
+  .progress-history {
+    position:absolute;
+    bottom:15px;
+    width: 92%;
+  }
+}
+
+.historyContainer p {
+  font-family: 'Roboto';
+  font-weight: lighter;
+  font-size: 22px;
+  color: #FFFFFF;
+}
+
+.historyContainer .card img {
+  width: 150%;
+}
+
+.notificationsContainer h5, .historyContainer h5{
   color: #fdfdfe;
 }
 
@@ -179,18 +255,8 @@ h5 {
 
 
 .post-box {
-
   position: relative;
 }
-
-.post-box .post-img {
-
-}
-
-.post-box .post-img img {
-
-}
-
 
 
 .main-slider {
@@ -282,7 +348,7 @@ h5 {
 /*NAVBAR-END*/
 
 
-body > .trendingContainer, .continueWatchingContainer, .moviesContainer, .topSearchContainer {
+body > .trendingContainer, .continueWatchingContainer, .moviesContainer, .topSearchContainer, .historyContainer {
   padding-top: 25px;
 }
 

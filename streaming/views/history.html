@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+  <title> History </title>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
+    <img id="navbar-brand mr-auto" class="img-fluid" src="../images/logo/logo.png" alt="logo">
+
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav mr-auto">
+        <li class="home nav-item">
+          <a href="home.html" class="nav-link text-sm-start"> Home </a>
+        </li>
+        <li class="myList nav-item">
+          <a href="my list.html" class="nav-link"> My List </a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <a href="#" id="select" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Categories</a>
+            <div class="dropdown-menu">
+              <div class="container container-md" style="width:647px;">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#" class="dropdown-item">Action</a>
+                    <a href="#" class="dropdown-item">Anime</a>
+                    <a href="#" class="dropdown-item">Blockbusters</a>
+                    <a href="#" class="dropdown-item">Children</a>
+                    <a href="#" class="dropdown-item">Documentaries</a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#" class="dropdown-item">Comedies</a>
+                    <a href="#" class="dropdown-item">Drama</a>
+                    <a href="#" class="dropdown-item">Horror</a>
+                    <a href="#" class="dropdown-item">International</a>
+                    <a href="#" class="dropdown-item">Romance</a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#" class="dropdown-item">Stand-Up</a>
+                    <a href="#" class="dropdown-item">Fantasy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav navbar-header navbar-profile pull-right">
+      <ul class="nav">
+        <li>
+          <a href="search.html" class="nav-link flex-md-row">
+            <img class="img-fluid" src="../images/icons/search-white.png" alt="profile icon">
+          </a>
+        </li>
+        <li>
+          <a href="notifications.html" class="nav-link flex-md-row">
+            <img class="img-fluid" src="../images/icons/notification-yellow.png" alt="profile icon">
+          </a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a id="profile-dropdown" href="#" data-bs-toggle="dropdown" class="nav-link" onfocusin="setPictureYellow()" onfocusout="setPictureWhite()">
+              <img id="profile-dropdown-pic" class="img-fluid" src="../images/icons/white profile icon.png" alt="profile icon">
+            </a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">History</a>
+              <div class="dropdown-divider"></div>
+              <a href="account.html" class="dropdown-item">Account</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Help</a>
+              <div class="dropdown-divider"></div>
+              <a href="index.html" class="dropdown-item">Sign out</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+<!-- History -->
+<div class="historyContainer container series">
+  <h3> History </h3>
+  <div class="row">
+    <div class="col">
+      <div class="card mb-3 text-white">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="../images/desktop%20ver/history/squidgame.png" class="img-fluid rounded-start img-continue-watching" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title">2. Hell</h5>
+              <a href="movie page.html" class="stretched-link"></a>
+              <p> Season 1 Episode 2 </p>
+
+              <div class="progress-history">
+                <div class="progress">
+                  <div class="progress-bar-history-1" role="progressbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="card mb-3 text-white">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="../images/desktop%20ver/history/peakyblinders.png" class="img-fluid rounded-start img-continue-watching" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+
+              <h5 class="card-title">Episode #3.5</h5>
+              <p> Season 3 Episode 5 </p>
+              <div class="progress-history">
+                <div class="progress">
+                  <div class="progress-bar-history-2" role="progressbar"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="card mb-3 text-white">
+        <div class="row g-0 d-flex">
+          <div class="col-md-5">
+            <img src="../images/desktop%20ver/history/tenet.png" class="img-fluid rounded-start img-continue-watching" alt="...">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+
+              <h5 class="card-title">Tenet</h5>
+              <p> Movie </p>
+              <div class="progress-history">
+                <div class="progress">
+                  <div class="progress-bar-history-3" role="progressbar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- History END-->
+
+
+
+<script src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
