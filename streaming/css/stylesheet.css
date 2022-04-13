@@ -25,6 +25,82 @@ h3 {
   border-color: rgb(253, 197, 1);
 }
 
+.search-box {
+  background-color: #212122;
+  padding: 3px;
+  margin-top: 15px;
+  border-radius: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #e6b507;
+}
+
+.search-box input {
+  padding-left: 35px;
+  width: 175px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+
+.search-box input::placeholder {
+  color: #bbbbbc;
+}
+
+.search-box button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-box button img {
+  width: 50%;
+  height: 70%;
+}
+
+
+.post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media(max-width: 1100px) {
+  .post-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width: 824px) {
+  .post-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media(max-width: 530px) {
+  .post-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+.post-box {
+
+  position: relative;
+}
+
+.post-box .post-img {
+
+}
+
+.post-box .post-img img {
+
+}
+
+
 
 .main-slider {
   display: flex;
@@ -115,7 +191,7 @@ h3 {
 /*NAVBAR-END*/
 
 
-body > .trendingContainer, .continueWatchingContainer, .moviesContainer {
+body > .trendingContainer, .continueWatchingContainer, .moviesContainer, .topSearchContainer {
   padding-top: 25px;
 }
 
