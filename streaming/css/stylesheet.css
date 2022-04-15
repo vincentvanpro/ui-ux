@@ -396,12 +396,12 @@ body > .mylistContainer {
 
 .progress-bar-1 {
   width: 70%;
-  background-color: #c50404;
+  background-color: #f90003;
 }
 
 .progress-bar-2 {
   width: 23%;
-  background-color: #c50404;
+  background-color: #f90003;
 }
 
 .series img {
@@ -1459,3 +1459,65 @@ body > .mylistContainer {
 
   color: #FFC700;
 }
+
+.categories { width:647px; }
+.margin1percent { margin-top:1% }
+.closeIcon { display: none; }
+
+/* PLAYER */
+.bodyPlayer { margin: 0; background-color: black; }
+.overlay { position:center; }
+.overlay input { margin-left: auto; margin-right: auto; display: block; }
+/* PLAYER END */
+
+
+/*
+
+____,-------------------------,____
+\   |   PROJECT STYLE GUIDE   |    /
+/___|-------------------------|____\
+                   guide styles at the end */
+
+/* Colors
+// ---------------------*/
+.color-1 {background: #FDC501;} /* color desc goes over here */
+.color-2 {background: #FDFDFE;}
+.color-3 {background: #FB0002;}
+.color-4 {background: #020203;}
+.color-5 {background: #3A3A3B;}
+
+
+
+/* Style Guide
+// --------------------- */
+#templateTitle {width: 50%; position: relative; padding-top: 10px; margin: 0 auto; text-align: center;}
+#projectTitle {font-size: 34px; font-weight: 700; color: #C4C4C4;}
+#projectDesc {font-family: sans-serif; font-size: 12px; font-weight: 300; color: #DBDBDB;}
+.seperator {width: 50%; position: relative; padding-top: 20px; margin: 0 auto; margin-bottom: 50px; border-bottom: 1px solid #EDEDED;}
+.sectionHeading {width: 50%; margin: 0 auto; text-align: left;}
+.sectionTitle {font-family: sans-serif; font-size: 12px; font-weight: 300; color: #848484;}
+.sectionSeperator {position: relative; padding-top: 5px; margin: 0 auto; border-bottom: 1px solid #CCCCCC;}
+ul#colors {width: 50%; position: relative; padding-top: 30px; margin: 0 auto; margin-bottom: 75px; text-align: center; list-style: none;}
+li.colorCircle { width: 100px; height: 100px; border-radius: 50%; display: inline-block; margin-right: 20px; box-shadow: 0 0 1px #ffffff;}
+.colorHex { position: relative; color: #D1D1D1; top: 120px; right: 6px; }
+#typography {width: 50%; position: relative; padding-top: 10px; margin: 0 auto; margin-bottom: 75px;}
+#inlineElements {width: 50%; position: relative; padding-top: 10px; margin: 0 auto; margin-bottom: 75px;}
+#formElements {width: 50%; position: relative; padding-top: 10px; margin: 0 auto; margin-bottom: 75px;}
+
+#buttonElements {width: 50%; position: relative; padding-top: 10px; margin: 0 auto; margin-bottom: 75px;}
+#buttonElements .nextBtnEl {
+  width: 250px;
+  height: 84px;
+  background: #FFC700;
+  border-radius: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+ul#icons {width: 50%; position: relative; padding-top: 30px; margin: 0 auto; margin-bottom: 75px; text-align: center; list-style: none;}
+li.iconEl { width: 100px; height: 100px; border-radius: 50%; display: inline-block; margin-right: 20px;}
+.StyleGuideContainer { background-color: #3A3A3A; width: 50%; margin: 0 auto; }

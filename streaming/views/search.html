@@ -33,7 +33,7 @@
                     <div class="dropdown">
                         <a href="#" id="select" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Categories</a>
                         <div class="dropdown-menu">
-                            <div class="container container-md" style="width:647px;">
+                            <div class="container container-md categories">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <a href="#" class="dropdown-item">Action</a>
@@ -68,7 +68,7 @@
                         <input id="userSearch" type="text" name="search" placeholder="Search" class="search-input" required/>
                         <button type="button">
                             <img id="hideIcon" class="img-fluid" src="../images/icons/search-white.png" alt="search icon">
-                            <img style="display: none" id="showIcon" class="img-fluid" src="../images/icons/close icon.png" alt="close icon">
+                            <img id="showIcon" class="img-fluid closeIcon" src="../images/icons/close icon.png" alt="close icon">
                         </button>
                     </form>
                 </li>
@@ -83,6 +83,8 @@
                             <img id="profile-dropdown-pic" class="img-fluid" src="../images/icons/white profile icon.png" alt="profile icon">
                         </a>
                         <div class="dropdown-menu">
+                            <a href="style_guide.html" class="dropdown-item">Style Guide</a>
+                            <div class="dropdown-divider"></div>
                             <a href="history.html" class="dropdown-item">History</a>
                             <div class="dropdown-divider"></div>
                             <a href="account.html" class="dropdown-item">Account</a>
@@ -179,7 +181,7 @@
 
 <!--- TV Programmes & Films -->
 <!-- this is shown after entering a request "The Lord of the rings" in the search bar-->
-<div id="showResponse" class="container series" style="margin-top:1%">
+<div id="showResponse" class="container series margin1percent">
     <h3> TV Programmes & Films </h3>
 
     <div class="post-container">
@@ -207,7 +209,7 @@
 
 <!--- Suggestions -->
 <!-- this is shown after entering a request "The Lord of the rings" in the search bar-->
-<div id="showSuggestions" class="container series" style="margin-top:1%">
+<div id="showSuggestions" class="container series margin1percent">
     <h3> Suggestions </h3>
 
     <div class="post-container">
