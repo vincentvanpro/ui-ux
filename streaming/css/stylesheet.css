@@ -17,6 +17,16 @@ body {
   border: none;
 }
 
+.continueWatchingContainer .card {
+  background-color: rgb(49, 49, 50);
+  border: none;
+}
+
+.continueWatchingContainer h5 {
+  color: #fdfdfe;
+}
+
+
 .historyContainer .card {
   background-color: rgb(49, 49, 50);
   border: none;
@@ -24,6 +34,12 @@ body {
 
 .historyContainer .progress {
   height: 7px;
+  background-color: #555354;
+}
+
+.continueWatchingContainer .progress {
+  height: 7px;
+  background-color: #555354;
 }
 
 .progress-bar-history-1 {
@@ -229,6 +245,33 @@ h5 {
 }
 
 
+@media(max-width: 763px) {
+  .search-box input {
+    padding-left: 35px;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+  }
+}
+
+@media(max-width: 400px) {
+  .search-box input {
+    padding-left: 35px;
+    width: 60px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+  }
+
+  .navbar-brand img {
+    display: none;
+  }
+}
+
+
 .post-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -337,14 +380,28 @@ h5 {
 
 }
 
-.home {
-  margin-left: 45px;
-  margin-right: 25px;
+@media(min-width: 1200px) {
+  .navbar-custom-search .home {
+    margin-left: 45px;
+    margin-right: 25px;
+  }
+
+  .navbar-custom-search .myList {
+    margin-right: 25px;
+  }
+
+   .home {
+     margin-left: 45px;
+     margin-right: 25px;
+   }
+
+   .myList {
+     margin-right: 25px;
+  }
 }
 
-.myList{
-  margin-right: 25px;
-}
+
+
 /*NAVBAR-END*/
 
 
@@ -1464,6 +1521,8 @@ body > .mylistContainer {
 .margin1percent { margin-top:1% }
 .closeIcon { display: none; }
 
+
+.bookmarkList .bookmark { position: absolute; top:-10px; right: 5px; width: 50px; height: 50px; }
 /* PLAYER */
 .bodyPlayer { margin: 0; background-color: black; }
 .overlay { position:center; }
