@@ -1,0 +1,1299 @@
+/* BOOTSTRAP ICONS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+
+/* LOG IN LINK */
+@media (max-width: 575.98px) { 
+  .nav-link {
+    font-size: 30px;
+  } 
+}
+/* LOG IN LINK END */
+
+
+/* INDEX PAGE */
+#initialText, #initialBtn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+}
+
+@media (max-width: 575.98px) { 
+  #initialText {
+    font-size: 35px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #initialBtn {
+    margin-left: 27%;
+    margin-top: 4%;
+    width: 45%;
+    background-color: #FFC700;
+    border-radius: 20px;
+
+    font-size: 30px;
+    line-height: 56px;
+    color: #000000;
+  }  }
+
+@media (min-width: 576px){
+  #initialText {
+    font-size: 50px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #initialBtn {
+    margin-left: 27%;
+    margin-top: 4%;
+    width: 45%;
+    background-color: #FFC700;
+    border-radius: 20px;
+
+    font-size: 30px;
+    line-height: 56px;
+    color: #000000;
+  } 
+}
+
+
+@media (min-width: 768px) {
+  #initialText {
+    font-size: 50px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #initialBtn {
+    margin-left: 32%;
+    margin-top: 4%;
+    width: 38%;
+    background-color: #FFC700;
+    border-radius: 20px;
+
+    font-size: 38px;
+    line-height: 56px;
+    color: #000000;
+  } 
+}
+
+@media (min-width: 992px) { 
+  #initialText {
+    font-size: 60px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #initialBtn {
+    margin-left: 32%;
+    margin-top: 4%;
+    width: 38%;
+    background-color: #FFC700;
+    border-radius: 20px;
+
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+  }
+}
+
+@media (min-width: 1200px) { 
+  #initialText {
+    font-size: 60px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #initialBtn {
+    margin-left: 32%;
+    margin-top: 4%;
+    width: 38%;
+    background-color: #FFC700;
+    border-radius: 20px;
+;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+  } 
+}
+/* INDEX PAGE END */
+
+
+/* STEP 1 PAGE */
+#stepText, #stepP, #inputNumber, #nextBtn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+}
+@media (max-width: 575.98px) {   
+  .mobilePhone{
+    margin-left: 36%;
+  }
+
+  #stepText {
+    font-size: 30px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #stepP {
+    margin-left:41%;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #FFC700;
+  }
+
+  #inputNumber {
+    margin-top: 3%;
+    margin-left: 26%; 
+    width: 48%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    font-size: 20px;
+    color: #FFFFFF;
+
+  }
+
+  #nextBtn {
+    width: 30%;
+    background: #FFC700;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: 37%;
+
+    font-size: 30px;
+    color: #000000;
+  } 
+}
+
+@media (min-width: 576px) { 
+  .mobilePhone{
+    margin-left: 36%;
+  }
+
+  #stepText {
+    font-size: 30px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #stepP {
+    margin-left:41%;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #FFC700;
+  }
+
+  #inputNumber {
+    margin-top: 3%;
+    margin-left: 26%; 
+    width: 48%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    font-size: 20px;
+    color: #FFFFFF;
+
+  }
+
+  #nextBtn {
+    width: 30%;
+    background: #FFC700;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: 37%;
+
+    font-size: 30px;
+    color: #000000;
+  } 
+}
+
+@media (min-width: 768px) {
+
+  .mobilePhone{
+    margin-left: 38%;
+  }
+
+  #stepText {
+    font-size: 45px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #stepP {
+    margin-left:41%;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFC700;
+  }
+
+  #inputNumber {
+    margin-top: 3%;
+    margin-left: 26%; 
+    width: 48%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    font-size: 30px;
+    color: #FFFFFF;
+
+  }
+
+  #nextBtn {
+    width: 25%;
+    background: #FFC700;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: 37%;
+
+    font-size: 40px;
+    line-height: 56px;
+    color: #000000;
+  } 
+}
+
+@media (min-width: 992px) { 
+  .mobilePhone{
+    margin-left: 41%;
+  }
+
+  #stepText {
+    font-size: 50px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #stepP {
+    margin-left:44%;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFC700;
+  }
+
+  #inputNumber {
+    margin-top: 3%;
+    margin-left: 26%; 
+    width: 48%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    font-size: 30px;
+    color: #FFFFFF;
+
+  }
+
+  #nextBtn {
+    width: 20%;
+    background: #FFC700;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: 40%;
+
+    font-size: 40px;
+    line-height: 56px;
+    color: #000000;
+  } 
+}
+
+@media (min-width: 1200px) {
+  .mobilePhone{
+    margin-left: 42%;
+  }
+
+
+  #stepText {
+    font-size: 50px;
+    line-height: 84px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #stepP {
+    margin-left:44%;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFC700;
+  }
+
+  #inputNumber {
+    margin-top: 3%;
+    margin-left: 30%; 
+    width: 40%;
+    padding-left: 3%;
+    padding-right: 3%;
+
+    font-size: 30px;
+    color: #FFFFFF;
+
+  }
+
+  #nextBtn {
+    width: 20%;
+    background: #FFC700;
+    border-radius: 20px;
+    margin-top: 10%;
+    margin-left: 40%;
+
+    font-size: 40px;
+    line-height: 56px;
+    color: #000000;
+  } 
+}
+/* STEP 1 PAGE END */
+
+
+/* STEP 1.2 PAGE */
+@media (max-width: 575.98px) {
+  #inputsRowHide {
+    display: none;
+  }
+
+  .inputsRowShow {
+    display: block;
+  }
+
+  .mobileSubmit {
+    margin-left:37%;
+  }
+
+  #input1, #input2, #input3, #input4 {
+    width:10%;
+
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 5%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 5%;
+  }
+
+  .input-border-bottom{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #FFC700;
+
+    background-color: #3A3A3A;
+  }
+
+  .input-border-bottom::placeholder{
+    color: rgba(255, 255, 255, 0.71)
+  }
+}
+
+@media (min-width: 576px) { 
+  .mobileSubmit {
+    margin-left:37%;
+  }
+
+  #inputsRowHide {
+    margin-top: 4%; margin-left:22%;
+  }
+
+  #inputsRowShow {
+    display: none;
+  }
+
+  #inputsRow {
+    margin-top: 4%; margin-left:22%;
+  }
+  
+  #input1, #input2, #input3, #input4 {
+    width: 120%;
+
+    padding-left: 3%;
+    padding-right: 3%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .input-border-bottom{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #FFC700;
+
+    background-color: #3A3A3A;
+  }
+
+  .input-border-bottom::placeholder{
+    color: rgba(255, 255, 255, 0.71)
+  }
+}
+
+@media (min-width: 768px) {
+  .mobileSubmit {
+    margin-left:39%;
+  }
+
+  #inputsRowHide {
+    margin-top: 4%; margin-left:24%;
+  }
+
+  #inputsRowShow {
+    display: none;
+  }
+  
+  #input1, #input2, #input3, #input4 {
+    width: 100%;
+
+    padding-left: 3%;
+    padding-right: 3%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .input-border-bottom{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #FFC700;
+
+    background-color: #3A3A3A;
+  }
+
+  .input-border-bottom::placeholder{
+    color: rgba(255, 255, 255, 0.71)
+  }
+}
+
+@media (min-width: 992px) {
+  .mobileSubmit {
+    margin-left:43%;
+  }
+
+  #inputsRowHide {
+    margin-top: 4%; margin-left:25%;
+  }
+
+  #inputsRowShow {
+    display: none;
+  }
+
+  #input1, #input2, #input3, #input4 {
+    width: 80%;
+
+    padding-left: 3%;
+    padding-right: 3%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .input-border-bottom{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #FFC700;
+
+    background-color: #3A3A3A;
+  }
+
+  .input-border-bottom::placeholder{
+    color: rgba(255, 255, 255, 0.71)
+  }
+}
+
+@media (min-width: 1200px) {
+  #inputsRowHide {
+    margin-top: 4%; margin-left:27%;
+  }
+
+  #inputsRowShow{
+    display: none;
+  }
+
+  #input1, #input2, #input3, #input4 {
+    width: 65%;
+
+    padding-left: 3%;
+    padding-right: 3%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .input-border-bottom{
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #FFC700;
+
+    background-color: #3A3A3A;
+  }
+
+  .input-border-bottom::placeholder{
+    color: rgba(255, 255, 255, 0.71)
+  }
+}
+/* STEP 1.2 PAGE END*/
+
+
+/* STEP 2 */
+#arrow1, #arrow2 {
+  color: #FFFFFF;
+  display: none;
+}
+
+#paymentBtn1:hover, #paymentBtn2:hover {
+  color: #FFFFFF;
+}
+
+@media (max-width: 575.98px) {
+  .payment {
+    margin-left:37.5%;
+  }
+
+  #paymentBtn1, #paymentBtn2{
+    background: #FFC700;
+    border-radius: 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 56px;
+    text-align: left;
+
+
+    width: 75%;
+    margin-left: 13%;
+    margin-top: 5%;
+  } 
+
+  #arrow1 {
+    margin-left: 15%;
+  }
+
+  #arrow2 {
+    margin-left: 60%;
+  }
+}
+
+@media (min-width: 576px) {
+  .payment {
+    margin-left:38.5%;
+  }
+
+  #paymentBtn1, #paymentBtn2{
+    background: #FFC700;
+    border-radius: 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 56px;
+    text-align: left;
+
+
+    width: 65%;
+    margin-left: 18%;
+    margin-top: 5%;
+  } 
+
+  #arrow1 {
+    margin-left: 9%;
+  }
+
+  #arrow2 {
+    margin-left: 57%;
+  }
+}
+
+@media (min-width: 768px) {
+  .payment {
+    margin-left:39.5%;
+  }
+
+  #paymentBtn1, #paymentBtn2{
+    background: #FFC700;
+    border-radius: 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 56px;
+    text-align: left;
+
+
+    width: 55%;
+    margin-left: 23%;
+    margin-top: 5%;
+  } 
+
+  #arrow1 {
+    margin-left: 9%;
+  }
+
+  #arrow2 {
+    margin-left: 57%;
+  }
+}
+
+@media (min-width: 992px) { 
+  .payment {
+    margin-left:42.5%;
+  }
+
+  #paymentBtn1, #paymentBtn2{
+    background: #FFC700;
+    border-radius: 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    text-align: left;
+
+
+    width: 47%;
+    margin-left: 26.5%;
+    margin-top: 5%;
+  }
+
+  #arrow1 {
+    margin-left: 10%;
+  }
+
+  #arrow2 {
+    margin-left: 57%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .payment {
+    margin-left:43%;
+  }
+
+  #paymentBtn1, #paymentBtn2{
+    background: #FFC700;
+    border-radius: 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 56px;
+    text-align: left;
+
+
+    width: 47%;
+    margin-left: 27%;
+    margin-top: 5%;
+  }
+
+  #arrow1 {
+    margin-left: 16%;
+  }
+
+  #arrow2 {
+    margin-left: 60%;
+  }
+}
+/* STEP 2 END */
+
+
+/* STEP 2.2 */
+#firstNameInput, #lastNameInput, #cardNumberInput, #expirationDateInput, #cvvInput {
+  color: #FFFFFF;
+}
+
+@media (max-width: 575.98px) { 
+ #visa {
+    margin-left: 9%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+
+  #mastercard {
+    margin-left: 1%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+
+  #stepPayment {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+
+    color: #FFC700;
+
+    margin-left: 37%;
+  }
+
+  #stepPaymentText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #firstNameInput, #lastNameInput, #cardNumberInput, #expirationDateInput, #cvvInput {
+    border-color: #FFC700;
+    background-color: #3A3A3A;
+    width: 361px;
+    height: 51px;
+    margin-left: 9%;
+    margin-bottom: 1.5%;
+  }
+
+  #firstNameInput::placeholder, #lastNameInput::placeholder, #cardNumberInput::placeholder, #expirationDateInput::placeholder, #cvvInput::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.71) 
+  }
+
+  #price {
+    width: 120px;
+    height: 67px;
+
+    background: #222222;
+    border-radius: 15px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFC700;
+
+    margin-left: 33%;
+    margin-top: 5%;
+  }
+
+  #agreement{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+
+    color: #FFFFFF;
+
+    margin-left: 8%;
+    margin-top: 3.5%;
+
+    width: 80%;
+  }
+
+
+  #submitBtn {
+    background: #FFC700;
+    border-radius: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+
+    color: #000000;
+    width: 35%;
+
+    margin-left: 30%;
+    margin-top: 6%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 576px) {
+  #visa {
+    margin-left: 15%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+
+  #mastercard {
+    margin-left: 1%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+
+  #stepPayment {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFC700;
+
+    margin-left: 38%;
+  }
+
+  #stepPaymentText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #firstNameInput, #lastNameInput, #cardNumberInput, #expirationDateInput, #cvvInput {
+    border-color: #FFC700;
+    background-color: #3A3A3A;
+    width: 361px;
+    height: 51px;
+    margin-left: 15%;
+    margin-bottom: 1.5%;
+  }
+
+  #firstNameInput::placeholder, #lastNameInput::placeholder, #cardNumberInput::placeholder, #expirationDateInput::placeholder, #cvvInput::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.71) 
+  }
+
+  #price {
+    width: 120px;
+    height: 67px;
+
+    background: #222222;
+    border-radius: 15px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFC700;
+
+    margin-left: 35%;
+    margin-top: 3.5%;
+  }
+
+  #agreement{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+
+    color: #FFFFFF;
+
+    margin-left: 13%;
+    margin-top: 3.5%;
+
+    width: 73%;
+  }
+
+
+  #submitBtn {
+    background: #FFC700;
+    border-radius: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+
+    color: #000000;
+    width: 35%;
+
+    margin-left: 30%;
+    margin-top: 4.5%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  #visa {
+    margin-left: 25%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+
+  #mastercard {
+    margin-left: 1%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+
+  #stepPayment {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFC700;
+
+    margin-left: 41%;
+  }
+
+  #stepPaymentText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #firstNameInput, #lastNameInput, #cardNumberInput, #expirationDateInput, #cvvInput {
+    border-color: #FFC700;
+    background-color: #3A3A3A;
+    width: 361px;
+    height: 51px;
+    margin-left: 25%;
+    margin-bottom: 1.5%;
+  }
+
+  #firstNameInput::placeholder, #lastNameInput::placeholder, #cardNumberInput::placeholder, #expirationDateInput::placeholder, #cvvInput::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.71) 
+  }
+
+  #price {
+    width: 120px;
+    height: 67px;
+
+    background: #222222;
+    border-radius: 15px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFC700;
+
+    margin-left: 40%;
+    margin-top: 2%;
+  }
+
+  #agreement{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+
+    color: #FFFFFF;
+
+    margin-left: 23.8%;
+    margin-top: 3%;
+
+    width: 108%;
+  }
+
+
+  #submitBtn {
+    background: #FFC700;
+    border-radius: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #000000;
+    width: 25%;
+
+    margin-left: 38%;
+    margin-top: 3.5%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 992px) { 
+  #visa {
+    margin-left: 33%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+
+  #mastercard {
+    margin-left: 1%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+
+  #stepPayment {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFC700;
+
+    margin-left: 44%;
+  }
+
+  #stepPaymentText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #firstNameInput, #lastNameInput, #cardNumberInput, #expirationDateInput, #cvvInput {
+    border-color: #FFC700;
+    background-color: #3A3A3A;
+    width: 361px;
+    height: 51px;
+    margin-left: 33%;
+    margin-bottom: 1.5%;
+  }
+
+  #firstNameInput::placeholder, #lastNameInput::placeholder, #cardNumberInput::placeholder, #expirationDateInput::placeholder, #cvvInput::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.71) 
+  }
+
+  #price {
+    width: 120px;
+    height: 67px;
+
+    background: #222222;
+    border-radius: 15px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFC700;
+
+    margin-left: 45%;
+    margin-top: 1.7%;
+  }
+
+  #agreement{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+
+    color: #FFFFFF;
+
+    margin-left: 32.5%;
+    margin-top: 2%;
+
+    width: 80%;
+  }
+
+
+  #submitBtn {
+    background: #FFC700;
+    border-radius: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #000000;
+    width: 20%;
+
+    margin-left: 42%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #visa {
+    margin-left: 33%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+
+  #mastercard {
+    margin-left: 1%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+
+  #stepPayment {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #FFC700;
+
+    margin-left: 44%;
+  }
+
+  #stepPaymentText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  #firstNameInput, #lastNameInput, #cardNumberInput, #expirationDateInput, #cvvInput {
+    border-color: #FFC700;
+    background-color: #3A3A3A;
+    width: 361px;
+    height: 51px;
+    margin-left: 33%;
+    margin-bottom: 1.5%;
+  }
+
+  #firstNameInput::placeholder, #lastNameInput::placeholder, #cardNumberInput::placeholder, #expirationDateInput::placeholder, #cvvInput::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.71) 
+  }
+
+  #price {
+    width: 120px;
+    height: 67px;
+
+    background: #222222;
+    border-radius: 15px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFC700;
+
+    margin-left: 43%;
+    margin-top: 1.7%;
+  }
+
+  #agreement{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify;
+
+    color: #FFFFFF;
+
+    margin-left: 32.5%;
+    margin-top: 2%;
+
+    width: 67%;
+  }
+
+
+  #submitBtn {
+    background: #FFC700;
+    border-radius: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #000000;
+    width: 20%;
+
+    margin-left: 40%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+  }
+}
+/* STEP 2.2 END */
+
+

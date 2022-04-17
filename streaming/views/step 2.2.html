@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/initial pages.css" />
 
 
     <title>Step 2</title>
@@ -13,46 +14,64 @@
 
   <body>
 
-    <img id="blackElipseLogo" src="../images/logo/black elipse.png" alt="black elipse">
-    <img id="yellowElipse" src="../images/logo/yellow elipse.png" alt="yellow elipse">
-    <img id="playIcon" src="../images/logo/play icon.png" alt="play icon">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <img id="navbar-brand mr-auto" class="img-fluid" src="../images/logo/logo.png" alt="logo">
 
-    <img id="mastercard" src="../images/cards/mastercard icon.png" alt="mastercard icon">
-    <img id="mastercardRectangle" src="../images/cards/mastercard rectangle.png" alt="mastercard rectangle">
-    <img id="visa" src="../images/cards/visa icon.png" alt="visa icon">
-    <img id="visaRectangle" src="../images/cards/visa rectangle.png" alt="visa rectangle">
-    
-    <p id="stepPayment">STEP 2 OF 2</p>
+        <div class="nav navbar-header navbar-profile pull-right">
+          <a href="login.html" class="nav-link">Log in</a>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
 
-    <p id="stepPaymentText">
-      Set up your credit or debit card
-    </p>
 
-    <input id="firstNameInput" type="text" class="form-control" placeholder="First Name" aria-label="firstName" aria-describedby="basic-addon1">
-    <input id="lastNameInput"  type="text" class="form-control" placeholder="Last Name" aria-label="lastName" aria-describedby="basic-addon1">
-    <input id="cardNumberInput"  type="text" class="form-control" placeholder="Card Number" aria-label="cardNumber" aria-describedby="basic-addon1">
-    <input id="expirationDateInput"  type="text" class="form-control" placeholder="Expiration date (MM/YY)" aria-label="expirationDate" aria-describedby="basic-addon1">
-    <input id="cvvInput"  type="text" class="form-control" placeholder="Security Code(CVV)" aria-label="cvv" aria-describedby="basic-addon1">
+    <div class="container">
+      <p id="stepPayment">STEP 2 OF 2</p>
 
-    <button id="price" type="button" class="btn btn-dark" disabled>EUR8/month</button>
+      <p id="stepPaymentText">
+        Set up your credit or debit card
+      </p>
 
-    <p id="agreement">
-      By clicking the “Done”button below, you agree to our<br>
-      Terms of Use and that you are over 18 and acknowledge<br>
-      the Privacy Statement. You agree that your membership<br>
-      will begin immediately, and that you will not be able to<br>
-      withdraw from the contract and receive a refund.<br>
-      We will automatically continue your membership and<br>
-      charge the membership fee to your payment method<br>
-      until you cancel. You may cancel at any time to avoid<br> 
-      future charges.
-    </p>
+      <img id="visa" src="../images/cards/visacard.png" alt="visa icon">
+      <img id="mastercard" src="../images/cards/mastercard.png" alt="mastercard icon">
 
-   <button id="submitBtn" type="button" class="btn btn-warning">Done</button>
+      <input id="firstNameInput" type="text" class="form-control" placeholder="First Name" aria-label="firstName" aria-describedby="basic-addon1">
+      <input id="lastNameInput"  type="text" class="form-control" placeholder="Last Name" aria-label="lastName" aria-describedby="basic-addon1">
+      <input id="cardNumberInput"  type="text" class="form-control" placeholder="Card Number" aria-label="cardNumber" aria-describedby="basic-addon1">
+      <input id="expirationDateInput"  type="text" class="form-control" placeholder="Expiration date (MM/YY)" aria-label="expirationDate" aria-describedby="basic-addon1">
+      <input id="cvvInput"  type="text" class="form-control" placeholder="Security Code(CVV)" aria-label="cvv" aria-describedby="basic-addon1" maxlength="3">
 
-    <button id="loginBtn" type="button" class="btn btn-link">Log in</button>
+      <button id="price" type="button" class="btn btn-dark" disabled>EUR8/month</button>
 
-    <script src="../js/main.js"></script>
+      <div class="row" id="agreement">
+        <div class="col-md-6">
+          By clicking the “Done” button below, you agree to our 
+          Terms of Use and that you are over 18 and acknowledge
+          the Privacy Statement. You agree that your membership
+          will begin immediately, and that you will not be able to
+          withdraw from the contract and receive a refund.
+          We will automatically continue your membership and
+          charge the membership fee to your payment method
+          until you cancel. You may cancel at any time to avoid 
+          future charges.
+        </div>
+      </div>
+
+     <button id="submitBtn" type="button" class="btn btn-warning" onclick="location.href='home.html'">Done</button>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+      $("#cardNumberInput, #cvvInput").keypress(function (e) {
+       if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+          return false;
+      }
+     });
+    </script>
 
   </body>
 </html>

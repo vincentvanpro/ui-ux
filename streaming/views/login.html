@@ -6,29 +6,46 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login page.css" />
 
 
     <title>Log in</title>
   </head>
 
   <body>
-
-    <img id="blackElipseLogo" src="../images/logo/black elipse.png" alt="black elipse">
-    <img id="yellowElipse" src="../images/logo/yellow elipse.png" alt="yellow elipse">
-    <img id="playIcon" src="../images/logo/play icon.png" alt="play icon">
-
-    <input id="phoneNumberInput" type="text" class="form-control" placeholder="Phone number" aria-label="phoneNumber" aria-describedby="basic-addon1">
-
-    <div class="input-group mb-3">
-      <input id="loginCodeInput" type="text" class="form-control" placeholder="Enter 4-digit code" aria-label="digitCode" aria-describedby="basic-addon2">
-      <div class="input-group-append">
-        <button id="sendCode" class="btn btn-outline-secondary" type="button">Send code</button>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <img id="navbar-brand mr-auto" class="img-fluid" src="../images/logo/logo.png" alt="logo">
       </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+
+    <div class="container loginContainer" >
+      <input id="phoneNumberInput" type="text" class="form-control" placeholder="Phone number" aria-label="phoneNumber" aria-describedby="basic-addon1">
+
+      <div class="input-group mb-3 loginCodeGroup">
+        <input id="loginCodeInput" type="text" class="form-control" placeholder="Enter 4-digit code" aria-label="digitCode" aria-describedby="basic-addon2" maxlength="4">
+        <div class="input-group-append">
+          <button id="sendCode" class="btn btn-outline-secondary" type="button">Send code</button>
+        </div>
+      </div>
+
+      <button id="logInBtn" type="button" class="btn btn-warning" onclick="location.href='home.html'">Log in</button>
+
+     <p id="signupText">Don’t have an account? <span id="signup" onclick="location.href='step1.html'">Sign up</span></p> 
     </div>
 
-   <button id="logInBtn" type="button" class="btn btn-warning">Log in</button>
-
-   <p id="signupText">Don’t have an account?</p> <button id="signupBtn" type="button" class="btn btn-link">Sign up </button>
-
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+      $("#phoneNumberInput, #loginCodeInput").keypress(function (e) {
+        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+          return false;
+        }
+      });
+    </script>
   </body>
 </html>
