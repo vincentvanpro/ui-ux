@@ -6,42 +6,85 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/account page.css" />
 
 
     <title>Account</title>
   </head>
 
   <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <img id="navbar-brand mr-auto" class="img-fluid" src="../images/logo/logo.png" alt="logo">
 
-    <img id="blackElipseLogo" src="../images/logo/black elipse.png" alt="black elipse">
-    <img id="yellowElipse" src="../images/logo/yellow elipse.png" alt="yellow elipse">
-    <img id="playIcon" src="../images/logo/play icon.png" alt="play icon">
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav mr-auto">
+            <li class="home nav-item">
+              <a href="home.html" class="nav-link text-sm-start"> Home </a>
+            </li>
+            <li class="myList nav-item">
+              <a href="account.html" class="nav-link"> Account </a>
+            </li>
+          </ul>
+        </div>
 
-    <img class="profileIconW" src="../images/icons/white profile icon.png" alt="profile icon">
+        <div class="nav navbar-header navbar-profile pull-right">
+          <ul class="nav">
+            <li>
+              <div class="dropdown">
+                <a id="profile-dropdown" href="#" data-bs-toggle="dropdown" class="nav-link" onfocusin="setPictureYellow()" onfocusout="setPictureWhite()">
+                  <img id="profile-dropdown-pic" class="img-fluid" src="../images/icons/white profile icon.png" alt="profile icon">
+                </a>
+                <div class="dropdown-menu">
+                  <a href="style_guide.html" class="dropdown-item">Style Guide</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="history.html" class="dropdown-item">History</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="account.html" class="dropdown-item">Account</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Help</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="index.html" class="dropdown-item">Sign out</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
 
-    <button id="homeBtn" type="button" class="btn btn-link">Home</button>
-    <button id="accountBtn" type="button" class="btn btn-link">Account</button>
+    <div class="container">
+      <p id="accountHeader">Membership & Billing</p>
 
-    <p id="accountHeader">Membership & Billing</p>
+      <p id="numberText">Phone: 3451 1260</p>
 
-    <p id="numberText">Phone: 3451 1260</p>
+      <button id="phoneChangeBtn" type="button" class="btn btn-warning" onclick="location.href='account_phone_confirm.html'">Change phone number
+        <i id="arrow1" class="bi bi-chevron-right"></i>
+      </button>
 
-    <button id="phoneChangeBtn" type="button" class="btn btn-warning" onclick="location.href='account_phone_confirm.html'">Change phone number</button>
-    <img id="arrowIcon1Acc" src="../images/icons/arrow icon.png" alt="arrow icon">
+      <div class="media mastercard">
+        <img class="align-self-center mr-3" src="../images/cards/mastercard.png" alt="mastercard">
+        <div class="media-body">
+          <p class="mb-0" id="cardNumberText">•••• •••• •••• 2241</p>
+        </div>
+      </div>
+      <p id="billingDate">Your next billing date is March 20, 2022.</p>
 
 
-    <p id="cardNumberText">•••• •••• •••• 2241</p>
-    <img id="mastercardAc" src="../images/cards/mastercard icon.png" alt="mastercard icon">
-    <img id="mastercardRectangleAc" src="../images/cards/mastercard rectangle.png" alt="mastercard rectangle">
-    <p id="billingDate">Your next billing date is March 20, 2022.</p>
+      <button id="manageBtn" type="button" class="btn btn-warning" onclick="location.href='account_creditcard_update.html'">Manage payment
+        <i id="arrow2" class="bi bi-chevron-right"></i>
+      </button>
 
-
-    <button id="manageBtn" type="button" class="btn btn-warning" onclick="location.href='account_creditcard_update.html'">Manage payment</button>
-    <img id="arrowIcon2Acc" src="../images/icons/arrow icon.png" alt="arrow icon">
-
-    <button id="cancelMemberBtn" type="button" class="btn btn-warning" onclick="location.href='index.html'">Cancel Membership</button>
+      <button id="cancelMemberBtn" type="button" class="btn btn-warning" onclick="location.href='index.html'">Cancel Membership</button>     
+    </div>
 
    <script src="../js/main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
   </body>
 </html>
