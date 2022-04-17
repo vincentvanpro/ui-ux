@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
-    <link rel="stylesheet" type="text/css" href="../css/initial pages.css" />
+    <link rel="stylesheet" type="text/css" href="../css/initial%20pages.css" />
     <title>Style Guide</title>
 </head>
 <body>
@@ -100,7 +100,7 @@
                 <i style="color: #FFFFFF; font-size: 35px;" class="bi bi-chevron-right"></i>
             </li>
             <li class="iconEl">
-                <div class=""><img src="../images/icons/close icon.png" alt=""></div>
+                <div class=""><img src="../images/icons/close%20icon.png" alt="closeIcon"></div>
             </li>
         </ul>
     </div>
@@ -127,82 +127,80 @@
     </div>
 
     <div id="formElements">
-        <input id="inputNumber" class="input-border-bottom" type="text" class="form-control" aria-describedby="basic-addon1"> 
+        <input id="inputNumber" class="input-border-bottom form-control" type="text">
 
         <div class="container" style="margin-left: 10%; padding-top: 5%;">
-          
-          <div class="row">
-            <div class="col-sm-2">
-              <input id="input1" class="input-border-bottom" type="text" class="form-control" aria-describedby="basic-addon1" maxlength="1">
+
+            <div class="row">
+                <div class="col-sm-2">
+                    <input id="input1" class="input-border-bottom form-control" type="text" maxlength="1">
+                </div>
+                <div class="col-sm-2">
+                    <input id="input2" class="input-border-bottom form-control" type="text" maxlength="1">
+                </div>
+                <div class="col-sm-2">
+                    <input id="input3" class="input-border-bottom form-control" type="text" maxlength="1">
+                </div>
+                <div class="col-sm-2">
+                    <input id="input4" class="input-border-bottom form-control" type="text" maxlength="1">
+                </div>
             </div>
-            <div class="col-sm-2">
-              <input id="input2" class="input-border-bottom" type="text" class="form-control" aria-describedby="basic-addon1" maxlength="1">
-            </div>
-            <div class="col-sm-2">
-              <input id="input3" class="input-border-bottom" type="text" class="form-control" aria-describedby="basic-addon1" maxlength="1">
-            </div>
-            <div class="col-sm-2">
-              <input id="input4" class="input-border-bottom" type="text" class="form-control" aria-describedby="basic-addon1" maxlength="1" >
-            </div>
-          </div>
-          </div>
         </div>
-
-        <input id="firstNameInput" type="text" class="form-control" placeholder="First Name" aria-label="firstName" aria-describedby="basic-addon1">
-        </button>
-        
     </div>
 
-
-    <!-- use these as needed -->
-    <div class="sectionHeading">
-        <span class="sectionTitle">BUTTON ELEMENTS</span>
-        <div class="sectionSeperator"></div>
-    </div>
-
-    <div id="buttonElements">
-
-        <button id="button1" type="button" class="btn btn-warning">Get Started</button>
-
-        <button id="button2" type="button" class="btn btn-warning" >Next</button>
-
-        <button id="button3" type="button" class="btn btn-warning" >Done</button>
-
-        <button id="button4" type="button" class="btn btn-warning">Log in</button>
-
-        <button id="button5" class="btn btn-outline-secondary" type="button">Send code</button>
-
-        <button id="button6" type="button" class="btn btn-warning btn-block">Mastercard / Visa
-          <i id="arrow" class="bi bi-chevron-right"></i>
-      </button>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script>
-      $("#inputNumber").keypress(function (e) {
-       if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-          return false;
-      }
-     });
-
-      $("#input1, #input2, #input3, #input4").keypress(function (e) {
-       if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
-          return false;
-      }
-     });
-
-      $( "#button6" ).hover(
-        function() {
-          $('#arrow').show()
-        },
-        function() {
-          $('#arrow').hide();
-        });
-    </script>
+    <input id="firstNameInput" type="text" class="form-control" placeholder="First Name" aria-label="firstName"/>
 
 </div>
+
+
+<!-- use these as needed -->
+<div class="sectionHeading">
+    <span class="sectionTitle">BUTTON ELEMENTS</span>
+    <div class="sectionSeperator"></div>
+</div>
+
+<div id="buttonElements">
+
+    <button id="button1" type="button" class="btn btn-warning">Get Started</button>
+
+    <button id="button2" type="button" class="btn btn-warning" >Next</button>
+
+    <button id="button3" type="button" class="btn btn-warning" >Done</button>
+
+    <button id="button4" type="button" class="btn btn-warning">Log in</button>
+
+    <button id="button5" class="btn btn-outline-secondary" type="button">Send code</button>
+
+    <button id="button6" type="button" class="btn btn-warning btn-block">Mastercard / Visa
+        <i id="arrow" class="bi bi-chevron-right"></i>
+    </button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script>
+    $("#inputNumber").keypress(function (e) {
+        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+            return false;
+        }
+    });
+
+    $("#input1, #input2, #input3, #input4").keypress(function (e) {
+        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+            return false;
+        }
+    });
+
+    $( "#button6" ).hover(
+        function() {
+            $('#arrow').show()
+        },
+        function() {
+            $('#arrow').hide();
+        });
+</script>
+
 </body>
 </html>

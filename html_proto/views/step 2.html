@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
-    <link rel="stylesheet" type="text/css" href="../css/initial pages.css" />
-
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="../css/initial%20pages.css" />
 
 
-    <title>Step 2</title>
-  </head>
-
-  <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-custom">
-      <div class="container">
-        <img id="navbar-brand mr-auto" class="img-fluid" src="../images/logo/logo.png" alt="logo">
-
-        <div class="nav navbar-header navbar-profile pull-right">
-          <a href="login.html" class="nav-link">Log in</a>
-        </div>
-      </div>
-    </nav>
-    <!-- NAVBAR END -->
 
 
-    <!-- STEP 2 -->
-    <div class="container" style="padding-bottom: 5%;">
-      <img id="navbar-brand mr-auto" class="img-fluid payment" src="../images/steps/payment.png" alt="payment">
+  <title>Step 2</title>
+</head>
 
-      <p id="stepP">STEP 2 OF 2</p>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
+    <img id="navbar-brand" class="img-fluid" src="../images/logo/logo.png" alt="logo">
 
-      <p id="stepText">
-        Set up your payment
-      </p>
-
-      <button id="paymentBtn1" type="button" class="btn btn-warning btn-block" onclick="location.href='step 2.2.html'">Mastercard / Visa
-          <i id="arrow1" class="bi bi-chevron-right"></i>
-      </button>
-
-      <button id="paymentBtn2" type="button" class="btn btn-warning"  onclick="location.href='https://www.paypal.com/ee/signin'">PayPal
-          <i id="arrow2" class="bi bi-chevron-right"></i>
-      </button>
+    <div class="nav navbar-header navbar-profile pull-right">
+      <a href="login.html" class="nav-link">Log in</a>
     </div>
-    <!-- STEP 2 END -->
+  </div>
+</nav>
+<!-- NAVBAR END -->
 
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script>
-      $( "#paymentBtn1" ).hover(
-        function() {
-          $('#arrow1').show()
-        },
-        function() {
-          $('#arrow1').hide();
-        });
 
-      $( "#paymentBtn2" ).hover(
-        function() {
-          $('#arrow2').show()
-        },
-        function() {
-          $('#arrow2').hide();
-        });
-    </script>
+<!-- STEP 2 -->
+<div class="container" style="padding-bottom: 5%;">
+  <img class="img-fluid payment" src="../images/steps/payment.png" alt="payment">
 
-  </body>
+  <p id="stepP">STEP 2 OF 2</p>
+
+  <p id="stepText">
+    Set up your payment
+  </p>
+
+  <button id="paymentBtn1" type="button" class="btn btn-warning btn-block" onclick="location.href='step 2.2.html'">Mastercard / Visa
+    <i id="arrow1" class="bi bi-chevron-right"></i>
+  </button>
+
+  <button id="paymentBtn2" type="button" class="btn btn-warning"  onclick="location.href='https://www.paypal.com/ee/signin'">PayPal
+    <i id="arrow2" class="bi bi-chevron-right"></i>
+  </button>
+</div>
+<!-- STEP 2 END -->
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script>
+  $( "#paymentBtn1" ).hover(
+          function() {
+            $('#arrow1').show()
+          },
+          function() {
+            $('#arrow1').hide();
+          });
+
+  $( "#paymentBtn2" ).hover(
+          function() {
+            $('#arrow2').show()
+          },
+          function() {
+            $('#arrow2').hide();
+          });
+</script>
+
+</body>
 </html>
