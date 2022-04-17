@@ -274,7 +274,7 @@ h5 {
 
 .post-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
@@ -405,7 +405,7 @@ h5 {
 /*NAVBAR-END*/
 
 
-body > .trendingContainer, .continueWatchingContainer, .moviesContainer, .topSearchContainer, .historyContainer {
+body > .trendingContainer, .categoriesContainer, .continueWatchingContainer, .moviesContainer, .topSearchContainer, .historyContainer {
   padding-top: 25px;
 }
 

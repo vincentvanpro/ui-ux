@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+
+  <title>Categories - drama</title>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
+    <img id="navbar-brand mr-auto" class="img-fluid" src="../images/logo/logo.png" alt="logo">
+
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav mr-auto">
+        <li class="home nav-item">
+          <a href="home.html" class="nav-link text-sm-start"> Home </a>
+        </li>
+        <li class="myList nav-item">
+          <a href="my list.html" class="nav-link"> My List </a>
+        </li>
+        <li class="nav-item">
+          <div class="dropdown">
+            <a href="#" id="select" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">Categories</a>
+            <div class="dropdown-menu">
+              <div class="container container-md categories">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="#" class="dropdown-item">Action</a>
+                    <a href="#" class="dropdown-item">Anime</a>
+                    <a href="#" class="dropdown-item">Blockbusters</a>
+                    <a href="#" class="dropdown-item">Children</a>
+                    <a href="#" class="dropdown-item">Documentaries</a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#" class="dropdown-item">Comedies</a>
+                    <a href="#" class="dropdown-item">Drama</a>
+                    <a href="#" class="dropdown-item">Horror</a>
+                    <a href="#" class="dropdown-item">International</a>
+                    <a href="#" class="dropdown-item">Romance</a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="#" class="dropdown-item">Stand-Up</a>
+                    <a href="#" class="dropdown-item">Fantasy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="nav navbar-header navbar-profile pull-right">
+      <ul class="nav">
+        <li>
+          <a href="search.html" class="nav-link flex-md-row">
+            <img class="img-fluid" src="../images/icons/search-white.png" alt="profile icon">
+          </a>
+        </li>
+        <li>
+          <a href="notifications.html" class="nav-link flex-md-row">
+            <img class="img-fluid" src="../images/icons/notification-white.png" alt="profile icon">
+          </a>
+        </li>
+        <li>
+          <div class="dropdown">
+            <a id="profile-dropdown" href="#" data-bs-toggle="dropdown" class="nav-link" onfocusin="setPictureYellow()" onfocusout="setPictureWhite()">
+              <img id="profile-dropdown-pic" class="img-fluid" src="../images/icons/white profile icon.png" alt="profile icon">
+            </a>
+            <div class="dropdown-menu">
+              <a href="style_guide.html" class="dropdown-item">Style Guide</a>
+              <div class="dropdown-divider"></div>
+              <a href="history.html" class="dropdown-item">History</a>
+              <div class="dropdown-divider"></div>
+              <a href="account.html" class="dropdown-item">Account</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Help</a>
+              <div class="dropdown-divider"></div>
+              <a href="index.html" class="dropdown-item">Sign out</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+<!-- Top Search -->
+<!-- this is shown before entering a request in the search bar-->
+<div id="hide" class="categoriesContainer container series">
+  <h3> Drama </h3>
+
+  <div class="post-container">
+    <div class="post-box">
+      <div class="post-img">
+        <a href="movie%20page.html">
+          <img src="../images/desktop ver/home page/squid%20game%20poster.png" class="img-fluid rounded-start" alt="...">
+        </a>
+      </div>
+    </div>
+
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/home page/all%20of%20us%20are%20dead%20poster.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/home page/money%20heist%20poster.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/home page/cherry%20poster.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/home page/joker%20poster.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/home page/the shining poster.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/home page/scream poster.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+<!-- Top Search END-->
+
+
+<!--- TV Programmes & Films -->
+<!-- this is shown after entering a request "The Lord of the rings" in the search bar-->
+<div id="showResponse" class="container series margin1percent">
+  <h3> TV Programmes & Films </h3>
+
+  <div class="post-container">
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/search page/film 1.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/search page/film 2.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/search page/film 3.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
+<!--- TV Programmes & Films END-->
+
+
+<!--- Suggestions -->
+<!-- this is shown after entering a request "The Lord of the rings" in the search bar-->
+<div id="showSuggestions" class="container series margin1percent">
+  <h3> Suggestions </h3>
+
+  <div class="post-container">
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/search page/hobbit 1.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/search page/hobbit 2.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+
+    <div class="post-box">
+      <div class="post-img">
+        <img src="../images/desktop ver/search page/hobbit 3.png" class="img-fluid rounded-start" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
+<!--- Suggestions END-->
+
+
+
+<script src="../js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('#showResponse').hide();
+    $('#showSuggestions').hide();
+
+  });
+
+  $('#userSearch').on("keydown", function value(e) {
+    if (e.keyCode == 13) {
+      e.preventDefault();
+      this.value = "The Lord of the rings";
+      $('#hide').hide();
+      $('#showResponse').show();
+      $('#showSuggestions').show();
+      $('#hideIcon').hide();
+      $('#showIcon').show();
+    }
+  });
+
+
+  $( "#hideIcon" ).click(function(e) {
+    e.preventDefault();
+    $('#userSearch').val("The Lord of the rings");
+    $('#hide').hide();
+    $('#showResponse').show();
+    $('#showSuggestions').show();
+    $('#hideIcon').hide();
+    $('#showIcon').show();
+  });
+
+  $('#showIcon').click(function(){
+    window.location.href='search.html';
+  })
+</script>
+
+</body>
+</html>
