@@ -1,0 +1,122 @@
+/* MOVIE PAGE */
+.episodesContainer .card {
+  background-color: #3A3A3A;
+  border: none;
+}
+
+.episodeDetails {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #858484;
+}
+
+.age {
+  margin-left: 3%;
+}
+
+.mainMovieInfo {
+  margin-top: 1%;
+}
+
+.movieHeader{ 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #FFC700;
+}
+
+@media (max-width: 575.98px) {
+	.moviePlayIcon {
+	  position: absolute;
+	  left: 45%;
+	  top: 25%;
+	  width: 15%;
+	}
+
+	.imdb{
+		width: 20%;
+		
+	}
+
+}
+
+
+@media (min-width: 576px) {
+
+	.moviePlayIcon {
+	  position: absolute;
+	  left: 45%;
+	  top: 25%;
+	  width: 13%;
+	}
+
+	.imdb{
+		width: 60%;
+		
+	}
+
+}
+
+
+@media (min-width: 768px) {
+	.moviePlayIcon {
+	  position: absolute;
+	  left: 45%;
+	  top: 27%;
+	  width: 12%;
+	}
+
+	.imdb{
+		width: 50%;
+		
+	}
+}
+
+
+@media (min-width: 992px) {
+
+	.moviePlayIcon {
+	  position: absolute;
+	  left: 45%;
+	  top: 25%;
+	  width: 15%;
+	}
+
+	.imdb{
+		width: 40%;
+		
+	}
+
+
+
+}
+
+
+@media (min-width: 1200px) {
+
+	.moviePlayIcon {
+	  position: absolute;
+	  left: 43%;
+	  top: 30%;
+	}
+
+
+	.imdb{
+		width: 30%;
+		
+	}
+
+	.rotten {
+		width: 100%;
+	}
+
+}
+
+/* MOVIE PAGE END */
