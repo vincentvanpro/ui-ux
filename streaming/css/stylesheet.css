@@ -481,7 +481,7 @@ body > .mylistContainer {
   left: auto;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 1000px) {
   .navbar-profile {
     position: absolute;
     display: inline-block;
