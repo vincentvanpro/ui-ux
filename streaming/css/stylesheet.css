@@ -380,6 +380,11 @@ body > .trendingContainer, .categoriesContainer, .continueWatchingContainer, .mo
   padding-top: 25px;
 }
 
+.movieContainer {
+  position: relative;
+}
+
+
 body > .mylistContainer {
   padding-top: 10px;
 }
