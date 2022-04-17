@@ -593,3 +593,92 @@
 	}
 }
 /* ACCOUNT PAGE END*/
+
+
+/*CONFIRMATION BLOCK -> header font-size */
+#confirmText{
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	line-height: 75px;
+	text-align: center;
+
+	color: #FFC700;
+	margin-bottom: 3%;
+}
+
+@media (max-width: 575.98px) {
+	#confirmText {
+		font-size: 35px;
+	}
+}
+@media (min-width: 576px) {
+	#confirmText {
+		font-size: 40px;
+	}
+}
+@media (min-width: 768px) {
+	#confirmText {
+		font-size: 55px;
+	}
+
+}
+@media (min-width: 992px) {
+	#confirmText {
+		font-size: 60px;
+	}
+
+}
+@media (min-width: 1200px) {
+	#confirmText {
+		font-size: 60px;
+	}
+}
+/* CONFIRMATION block END */
+
+
+/* UPDATE PHONE NUMBER block */
+#updatePhoneText {
+	font-family: 'Roboto';
+	 font-style: normal;
+	 font-weight: 700;
+	 line-height: 56px;
+
+	 color: #FFFFFF;
+
+	margin-bottom: 3%;
+}
+
+@media (max-width: 575.98px) {
+	#updatePhoneText {
+		font-size: 35px;
+		margin-left: 5%;
+	}
+}
+@media (min-width: 576px) {
+	#updatePhoneText {
+		font-size: 35px;
+		margin-left: 9%;
+	}
+}
+@media (min-width: 768px) {
+	#updatePhoneText {
+		font-size: 43px;
+		margin-left: 13%;
+	}
+
+}
+@media (min-width: 992px) {
+	#updatePhoneText {
+		font-size: 48px;
+		margin-left: 16%;
+	}
+
+}
+@media (min-width: 1200px) {
+	#updatePhoneText {
+		font-size: 48px;
+		margin-left: 21%;
+	}
+}
+/* UPDATE PHONE NUMBER block END */

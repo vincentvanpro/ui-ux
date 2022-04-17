@@ -6,36 +6,87 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/account pages.css" />
+    <link rel="stylesheet" type="text/css" href="../css/login page.css" />
 
 
     <title>Account</title>
   </head>
 
   <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container">
+        <img id="navbar-brand mr-auto" class="img-fluid" src="../images/logo/logo.png" alt="logo">
 
-    <img id="blackElipseLogo" src="../images/logo/black elipse.png" alt="black elipse">
-    <img id="yellowElipse" src="../images/logo/yellow elipse.png" alt="yellow elipse">
-    <img id="playIcon" src="../images/logo/play icon.png" alt="play icon">
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav mr-auto">
+            <li class="home nav-item">
+              <a href="home.html" class="nav-link text-sm-start"> Home </a>
+            </li>
+            <li class="myList nav-item">
+              <a href="account.html" class="nav-link"> Account </a>
+            </li>
+          </ul>
+        </div>
 
-    <img class="profileIconW" src="../images/icons/white profile icon.png" alt="profile icon">
-
-    <button id="homeBtn" type="button" class="btn btn-link">Home</button>
-    <button id="accountBtn" type="button" class="btn btn-link">Account</button>
-
-    <p id="updatePhoneAccText">Update your phone number</p>
-
-    <input id="phoneNumberInputAcc" type="text" class="form-control" placeholder="Phone number" aria-label="phoneNumber" aria-describedby="basic-addon1">
-
-    <div class="input-group mb-3">
-      <input id="loginCodeInputAcc" type="text" class="form-control" placeholder="Enter 4-digit code" aria-label="digitCode" aria-describedby="basic-addon2">
-      <div class="input-group-append">
-        <button id="sendCodeAcc" class="btn btn-outline-secondary" type="button">Send code</button>
+        <div class="nav navbar-header navbar-profile pull-right">
+          <ul class="nav">
+            <li>
+              <div class="dropdown">
+                <a id="profile-dropdown" href="#" data-bs-toggle="dropdown" class="nav-link" onfocusin="setPictureYellow()" onfocusout="setPictureWhite()">
+                  <img id="profile-dropdown-pic" class="img-fluid" src="../images/icons/white profile icon.png" alt="profile icon">
+                </a>
+                <div class="dropdown-menu">
+                  <a href="style_guide.html" class="dropdown-item">Style Guide</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="history.html" class="dropdown-item">History</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="account.html" class="dropdown-item">Account</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="#" class="dropdown-item">Help</a>
+                  <div class="dropdown-divider"></div>
+                  <a href="index.html" class="dropdown-item">Sign out</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+    <!-- NAVBAR END-->
+
+
+    <div class="container loginContainer" >
+        <p id="updatePhoneText">Update your phone number</p>
+
+        <input id="phoneNumberInput" type="text" class="form-control" placeholder="Phone number" aria-label="phoneNumber" aria-describedby="basic-addon1">
+
+        <div class="input-group mb-3 loginCodeGroup">
+          <input id="loginCodeInput" type="text" class="form-control" placeholder="Enter 4-digit code" aria-label="digitCode" aria-describedby="basic-addon2" maxlength="4">
+          <div class="input-group-append">
+            <button id="sendCode" class="btn btn-outline-secondary" type="button">Send code</button>
+          </div>
+        </div>
+
+        <button id="logInBtn" type="button" class="btn btn-warning" onclick="location.href='account.html'">Done</button>
     </div>
 
-    <button id="submitBtnAcc" type="button" class="btn btn-warning" onclick="location.href='account.html'">Done</button>
 
-    <script src="../js/main.js"></script>
+
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+      $("#phoneNumberInput, #loginCodeInput").keypress(function (e) {
+        if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+          return false;
+        }
+      });
+    </script>
 
 
    
