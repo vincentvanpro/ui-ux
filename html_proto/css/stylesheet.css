@@ -190,6 +190,52 @@ h5 {
   border: 1px solid #e6b507;
 }
 
+.margin-top2percent {
+  margin-top: 2%;
+}
+
+.margin-top1percent {
+  margin-top: 1%;
+}
+
+.padding-bottom5percent {
+  padding-bottom: 5%;
+}
+
+.margin-left25percent {
+  margin-left: 25%;
+}
+
+.margin-top3percent {
+  margin-top: 3%;
+}
+
+.align-center-style {
+  text-align: center;
+}
+
+.border-style {
+  border-right: 5px solid rgba(0, 0, 0, 0.3);height: 61px;
+}
+
+.color-muted {
+  color:#858484;
+}
+
+.main-content-style {
+  margin-top: 5%;
+  padding-bottom: 5%;
+}
+
+.conformation-style {
+  margin-top: 3%;
+  padding-bottom: 5%;
+}
+
+.inputsRowShowStyle {
+  margin-left:25%;
+}
+
 .search-box input {
   padding-left: 35px;
   width: 175px;
@@ -500,6 +546,17 @@ ____,-------------------------,____
 .colorCircle {
   border: 1px solid #FFC700;
 }
+
+.colors-row {
+  width: 80%; padding-right: 1%;
+}
+
+.margin-left10percent { margin-left: 10%; }
+.padding-top3percent { padding-top: 3%; }
+.padding-top5percent { padding-top: 5%; }
+.margin-bottom3percent { margin-bottom: 3%; }
+
+.arrow-color-size { color: #FFFFFF; font-size: 35px; }
 
 
 
