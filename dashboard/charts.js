@@ -35,36 +35,6 @@ option1 = {
     ]
 }
 
-option2 = {
-    legend: {
-        orient: 'vertical',
-        right: 10,
-        top: 'end'
-    },
-    xAxis: {
-        type: 'value',
-        boundaryGap: [0, 0.01]
-    },
-    yAxis: {
-        type: 'category',
-        data: []
-    },
-
-
-    series: [
-        {
-            name : "Name A",
-            type : 'bar',
-            data : []
-        },
-        {
-            name : "Name B",
-            type : 'bar',
-            data : []
-        }
-    ]
-}
-
 var option1 = JSON.parse(JSON.stringify(option1))
 fetch("data\\subscribers.json")
     .then(response => response.json())
@@ -113,6 +83,37 @@ fetch("data\\subscribers.json")
 
         myChart.setOption(option1)
     })
+
+
+option2 = {
+    legend: {
+        orient: 'vertical',
+        right: 10,
+        top: 'end'
+    },
+    xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01]
+    },
+    yAxis: {
+        type: 'category',
+        data: []
+    },
+
+
+    series: [
+        {
+            name : "Name A",
+            type : 'bar',
+            data : []
+        },
+        {
+            name : "Name B",
+            type : 'bar',
+            data : []
+        }
+    ]
+}
 
 
 var option2 = JSON.parse(JSON.stringify(option2))
@@ -185,3 +186,77 @@ fetch("data\\hours_viewed_in_first_28_days.json")
         myChart2.setOption(option2)
 
     }).catch(error => console.error(error))
+
+
+var option = {
+  title: {
+    text: 'Top 5 movie genre by tickets grossing from 2020 to 2022',
+    subtext: "https://www.the-numbers.com/market/",
+    sublink: "https://www.the-numbers.com/market/"
+  },
+  tooltip: {
+    trigger: 'axis'
+  },
+  legend: {
+    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
+  },
+  grid: {
+    left: '3%',
+    right: '4%',
+    bottom: '3%',
+    containLabel: true
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  xAxis: {
+    type: 'category',
+    boundaryGap: false,
+    data: ['20202', '2021', '2022']
+  },
+  yAxis: {
+    type: 'value'
+  },
+  series: [
+    {
+      name: 'Adventure',
+      type: 'line',
+      smooth: true,
+      data: [76612144 , 85974897, 63387897]
+    },
+    {
+      name: 'Action',
+      type: 'line',
+      smooth: true,
+      data: [46852981, 255234837, 112192515]
+    },
+    {
+      name: 'Thriller/Suspense',
+      type: 'line',
+      smooth: true,
+      data: [28739655, 15360638]
+    },
+    {
+      name: 'Horror',
+      type: 'line',
+      smooth: true,
+      data: [26930298, 63313994, 11251694]
+    },
+    {
+      name: 'Drama',
+      type: 'line',
+      smooth: true,
+      data: [26230346 , 25542590, 14453436]
+    },
+    {
+      name: 'Comedy',
+      type: 'line',
+      smooth: true,
+      data: [null, 39354106 , 14369547]
+    }
+  ]
+};
+
+myChart3.setOption(option);
