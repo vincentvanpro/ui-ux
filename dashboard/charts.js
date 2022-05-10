@@ -77,6 +77,127 @@ option1 = {
     ]
 }
 
+fetch("data\\world.json")
+    .then(response => response.json())
+    .then(json => {
+        // Test for label calculation.
+        json.features.forEach(feature => {
+            feature.properties && (feature.properties.cp = null);
+        });
+
+        echarts.registerMap('world', json);
+
+        var chart = echarts.init(document.getElementById('main'), null, {
+
+        });
+
+        var itemStyle = {
+            normal:{
+                borderWidth: 0.5,
+                borderColor: 'black'
+            },
+            emphasis:{
+                label:{show:true}
+                // shadowOffsetX: 0,
+                // shadowOffsetY: 0,
+                // shadowBlur: 20,
+                // shadowColor: 'rgba(0, 0, 0, 0.3)'
+            }
+        };
+
+        fetch("data\\mapData.json")
+            .then(response => response.json())
+            .then(json => {
+                let data = json.data;
+                let pairs = []
+
+                let streamingDict = {0: "Netflix", 1: "Amazon Prime", 2: "Diney+", 3: "Canal Plus", 4: "Globoplay", 5: "iQIYI", 6: "ivi TV", 7: "no info available"}
+                data.forEach(item => {
+                    pairs.push([item.name, item.value]);
+                })
+                var COLORS = [
+                    "#070093",
+                    "#1c3fbf",
+                    "#1482e5",
+                    "#70b4eb",
+                    "#b4e0f3",
+                    "#ffffff",
+                ];
+                chart.setOption({
+                    title: {
+                        text: 'Map of Top Streaming Services by Country',
+                        subtext: json.link,
+                        sublink: json.link,
+                        left: 'center',
+                    },
+                    /*toolbox: {
+                        show: true,
+                        //orient: 'vertical',
+                        left: 'left',
+                        top: 'top',
+                        feature: {
+                            dataView: { readOnly: false },
+                            restore: {},
+                            saveAsImage: {}
+                        }
+                    },*/
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: function (params) {
+                            console.log(params)
+                            return params.seriesName + '<br/>' + params.name + ': '+ streamingDict[data[params.dataIndex].value];
+                        }
+                    },
+                    visualMap: [
+                        {
+                            show: false,
+                            dimension: 0,
+                            //categories: ["Netflix", "Amazon Prime", "Diney+", "Canal Plus", "Globoplay", "iQIYI", "ivi TV", "-"],
+                            categories: [0, 1, 2, 3, 4, 5, 6, 7],
+                            // the second visualMap component
+                            type: 'piecewise', // defined as discrete visualMap
+                            inRange: {
+                                color: [
+                                    '#ea0001',
+                                    '#f59303',
+                                    '#017ca2',
+                                    '#301244',
+                                    '#49c04b',
+                                    '#b16fea',
+                                    '#6feabb',
+                                    'grey',
+                                ]
+                            },
+                            outOfRange: {
+                                color: 'grey'
+                            },
+                        }
+                    ],
+                    grid: {
+                      containLabel: true
+                    },
+                    series: [
+                        {
+                            name: 'Top Streaming Service',
+                            type: 'map',
+                            map: 'world',
+                            roam: true,
+                            top: 60,
+                            width: '80%',
+                            label: {
+                                show: true,
+                                textBorderColor: '#fff',
+                                textBorderWidth: 1
+                            },
+                            itemStyle: itemStyle,
+                            data: data
+                        }
+                    ]
+                })
+            })
+    })
+
+
 var option1 = JSON.parse(JSON.stringify(option1))
 fetch("data\\subscribers.json")
     .then(response => response.json())
@@ -109,7 +230,7 @@ fetch("data\\subscribers.json")
         // console.log(books_data_by_years)
 
         option1.xAxis = {data: years, name: 'year'}
-        option1.yAxis = {name: 'subscribers (mil)'}
+        option1.yAxis = {name: 'subscribers (millions)'}
         option1.grid = {
             top: '20%',
             bottom: '3%',
@@ -172,14 +293,14 @@ fetch("data\\hours_viewed_in_first_28_days.json")
         data.forEach(item => {
             if (typeof item.MovieName !== "undefined") {
                 labels.push(item.MovieName);
-                films.push(item.HoursViewedEng);
+                films.push(Math.floor(item.HoursViewedEng / 100000));
                 tvSeries.push('-');
-                all.push(item.HoursViewedEng)
+                all.push(item.HoursViewedEng);
             } else if (typeof item.SeriesName !== "undefined") {
                 labels.push(item.SeriesName);
-                tvSeries.push(item.HoursViewedEng);
+                tvSeries.push(Math.floor(item.HoursViewedEng / 100000));
                 films.push('-');
-                all.push(item.HoursViewedEng)
+                all.push(item.HoursViewedEng);
             }
 
 
@@ -205,7 +326,7 @@ fetch("data\\hours_viewed_in_first_28_days.json")
 
         option2.yAxis.data = labels
         option2.yAxis.name = "Name"
-        option2.xAxis.name = "Hours viewed"
+        option2.xAxis.name = "Hours viewed / 100000"
         option2.series = [
 
             {
