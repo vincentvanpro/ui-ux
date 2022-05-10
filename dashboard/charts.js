@@ -7,6 +7,48 @@ var myChart2 = echarts.init(chartDom2);
 var myChart3 = echarts.init(chartDom3);
 var myChart4 = echarts.init(chartDom4);
 
+
+option = {
+  title: {
+    text: 'Share of streaming services by subscribers in 2021',
+    subtext: 'https://mediapeanut.com/streaming-statistics/',
+    sublink: 'https://mediapeanut.com/streaming-statistics/'
+  },
+  tooltip: {
+    trigger: 'item'
+  },
+  legend: {
+    orient: 'vertical',
+    left: 'right',
+    top: '35%'
+  },
+  series: [
+    {
+      name: 'Streaming service',
+      type: 'pie',
+      radius: '50%',
+      data: [
+        { value: 214000000, name: 'Netflix' },
+        { value: 175000000, name: 'Amazon' },
+        { value: 118000000, name: 'Disney+' },
+        { value: 39700000, name: 'Hulu' },
+        { value: 54000000, name: 'Peacock' },
+        { value: 69000000, name: 'HBO' }
+      ],
+      emphasis: {
+        itemStyle: {
+          shadowBlur: 10,
+          shadowOffsetX: 0,
+          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        }
+      }
+    }
+  ]
+};
+
+myChart.setOption(option);
+
+
 option1 = {
     tooltip: {
         trigger: 'axis',
@@ -81,7 +123,7 @@ fetch("data\\subscribers.json")
             }
         ]
 
-        myChart.setOption(option1)
+        myChart2.setOption(option1)
     })
 
 
@@ -145,8 +187,9 @@ fetch("data\\hours_viewed_in_first_28_days.json")
         option2.title = {
             text: 'The Top 10 most popular TV (English), \nbased on hours viewed in their first 28 days.',
             subtext: json.link,
-            sublink: json.link
+            sublink: json.link,
             // left: 'right'
+            top: '1.5%'
         }
         option2.tooltip = {
             trigger: 'axis',
@@ -179,84 +222,84 @@ fetch("data\\hours_viewed_in_first_28_days.json")
         ]
 
         option2.grid = {
-            top: '15%',
+            top: '25%',
             bottom: '3%',
             containLabel: true
         }
-        myChart2.setOption(option2)
+        myChart3.setOption(option2)
 
     }).catch(error => console.error(error))
 
 
-var option = {
+var option3 = {
   title: {
-    text: 'Top 5 movie genre by tickets grossing from 2020 to 2022',
+    text: 'Top 5 movie genres by tickets grossing \nbetween 2020 and 2022 years',
     subtext: "https://www.the-numbers.com/market/",
     sublink: "https://www.the-numbers.com/market/"
   },
   tooltip: {
     trigger: 'axis'
   },
-  legend: {
-    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine']
-  },
   grid: {
+    top: '20%',
     left: '3%',
-    right: '4%',
     bottom: '3%',
     containLabel: true
-  },
-  toolbox: {
-    feature: {
-      saveAsImage: {}
-    }
   },
   xAxis: {
     type: 'category',
     boundaryGap: false,
-    data: ['20202', '2021', '2022']
+    data: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'],
+    name: "Year"
   },
   yAxis: {
-    type: 'value'
+    type: 'value',
+    name: "Number of tickets"
   },
   series: [
     {
       name: 'Adventure',
       type: 'line',
       smooth: true,
-      data: [76612144 , 85974897, 63387897]
+      data: [367661045, 483468157, 303036646, 326672973, 417538823, 76612144, 85974897, 63387897]
     },
     {
       name: 'Action',
       type: 'line',
       smooth: true,
-      data: [46852981, 255234837, 112192515]
+      data: [360271933, 285656773, 367630855, 452053536, 316329127, 46852981, 255234837, 112192515]
     },
     {
       name: 'Thriller/Suspense',
       type: 'line',
       smooth: true,
-      data: [28739655, 15360638]
+      data: [106626152, 92215165, null, null, 123026805, 28739655]
     },
     {
       name: 'Horror',
       type: 'line',
       smooth: true,
-      data: [26930298, 63313994, 11251694]
+      data: [null, null, 123651291, 93417615, 88483577, 26930298, 63313994, 11251694]
     },
     {
       name: 'Drama',
       type: 'line',
       smooth: true,
-      data: [26230346 , 25542590, 14453436]
+      data: [245574422, 141071778, 147964974, 177635237, 151412394, 26230346 , 25542590, 14453436]
     },
     {
       name: 'Comedy',
       type: 'line',
       smooth: true,
-      data: [null, 39354106 , 14369547]
+      data: [146584641, 158413985, null, 89269172, null, null, 39354106 , 14369547]
+    },
+    {
+      name: 'Musical',
+      type: 'line',
+      smooth: true,
+      data: [null, null, 99237710]
     }
   ]
 };
 
-myChart3.setOption(option);
+myChart4.setOption(option3);
