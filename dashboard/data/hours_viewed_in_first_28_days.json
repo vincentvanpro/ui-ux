@@ -1,0 +1,26 @@
+{
+  "data": [
+    {"SeriesName": "Bridgerton: Season 2", "HoursViewedEng":  656260000},
+    {"SeriesName": "Bridgerton: Season 1", "HoursViewedEng":  625490000},
+    {"SeriesName": "Stranger Things 3", "HoursViewedEng":  582100000},
+    {"SeriesName": "The Witcher: Season 1", "HoursViewedEng":  541010000},
+    {"SeriesName": "Inventing Anna: Limited Series", "HoursViewedEng":  511920000},
+    {"SeriesName": "13 Reasons Why: Season 2", "HoursViewedEng":  496120000},
+    {"SeriesName": "The Witcher: Season 2", "HoursViewedEng":  484340000},
+    {"SeriesName": "13 Reasons Why: Season 1", "HoursViewedEng":  475570000},
+    {"SeriesName": "Maid: Limited Series", "HoursViewedEng":  469090000},
+    {"SeriesName": "You: Season 3", "HoursViewedEng":  467830000},
+
+    {"MovieName": "Red Notice", "HoursViewedEng": 364020000},
+    {"MovieName": "Don't Look Up", "HoursViewedEng": 359790000},
+    {"MovieName": "Bird Box", "HoursViewedEng": 282020000},
+    {"MovieName": "The Adam Project", "HoursViewedEng": 233160000},
+    {"MovieName": "Extraction", "HoursViewedEng": 231340000},
+    {"MovieName": "The Unforgivable", "HoursViewedEng": 214700000},
+    {"MovieName": "The Irishman", "HoursViewedEng": 214570000},
+    {"MovieName": "The Kissing Booth 2", "HoursViewedEng": 209250000},
+    {"MovieName": "6 Underground", "HoursViewedEng": 205470000},
+    {"MovieName": "Spenser Confidential", "HoursViewedEng": 197320000}
+  ],
+  "link": "https://top10.netflix.com/tv?week=2022-04-10"
+}

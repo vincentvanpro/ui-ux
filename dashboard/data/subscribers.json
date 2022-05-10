@@ -1,0 +1,16 @@
+{
+  "data": [
+    {"QYear": 2011, "subscribersMil": 21.5},
+    {"QYear": 2012, "subscribersMil": 25.7},
+    {"QYear": 2013, "subscribersMil": 35.6},
+    {"QYear": 2014, "subscribersMil": 47.9},
+    {"QYear": 2015, "subscribersMil": 62.7},
+    {"QYear": 2016, "subscribersMil": 79.9},
+    {"QYear": 2017, "subscribersMil": 99.0},
+    {"QYear": 2018, "subscribersMil": 124.3},
+    {"QYear": 2019, "subscribersMil": 151.5},
+    {"QYear": 2020, "subscribersMil": 192.9},
+    {"QYear": 2021, "subscribersMil": 209.0}
+  ],
+  "link": "https://www.businessofapps.com/data/netflix-statistics/"
+}
