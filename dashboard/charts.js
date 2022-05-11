@@ -45,7 +45,8 @@ fetch("data\\leading_streaming_platforms.json")
         option.title = {
             text: json.text,
             subtext: json.link,
-            sublink: json.link
+            sublink: json.link,
+            left: 'center'
         }
 
         option.series = [
@@ -73,8 +74,8 @@ option1 = {
 
     legend: {
         orient: 'vertical',
-        right: 10,
-        top: 'end'
+        left: 'left',
+        top: '8%'
     },
     xAxis: {
         data: [],
@@ -138,7 +139,7 @@ fetch("data\\world.json")
                         text: 'Map of Top Streaming Services by Country',
                         subtext: json.link,
                         sublink: json.link,
-                        left: 'center',
+                        left: 'center'
                     },
                     tooltip: {
                         trigger: 'item',
@@ -212,7 +213,8 @@ fetch("data\\subscribers.json")
         option1.title = {
             text: 'Annual subscribers (Q2 of each respective year)',
             subtext: json.link,
-            sublink: json.link
+            sublink: json.link,
+            left: 'center'
         }
 
         option1.tooltip = {
@@ -226,8 +228,17 @@ fetch("data\\subscribers.json")
             }
         }
 
-        option1.xAxis = {data: years, name: 'year'}
-        option1.yAxis = {name: 'subscribers (millions)'}
+        option1.xAxis = {
+            data: years,
+            name: 'Year',
+            nameTextStyle: {
+                fontWeight: "bolder"
+            }}
+        option1.yAxis = {
+            name: 'Subscribers (millions)',
+            nameTextStyle: {
+                fontWeight: "bolder"
+             }}
         option1.grid = {
             top: '20%',
             bottom: '3%',
@@ -248,8 +259,8 @@ fetch("data\\subscribers.json")
 option2 = {
     legend: {
         orient: 'vertical',
-        right: 10,
-        top: 'end'
+        left: 'left',
+        top: '10%'
     },
     xAxis: {
         type: 'value',
@@ -302,10 +313,10 @@ fetch("data\\hours_viewed_in_first_28_days.json")
 
         })
         option2.title = {
-            text: 'The Top 10 most popular TV (English), \nbased on hours viewed in their first 28 days.',
+            text: 'The Top 10 most popular TV (English), based on hours viewed in their first 28 days',
             subtext: json.link,
             sublink: json.link,
-            top: '1.5%'
+            left: 'center'
         }
         option2.tooltip = {
             trigger: 'axis',
@@ -319,9 +330,22 @@ fetch("data\\hours_viewed_in_first_28_days.json")
             }
         }
 
-        option2.yAxis.data = labels
-        option2.yAxis.name = "Name"
-        option2.xAxis.name = "Hours viewed / 100000"
+        option2.yAxis = {
+            data: labels,
+            name: "Name",
+            nameTextStyle: {
+             fontWeight: "bolder"
+            }
+        }
+
+        option2.xAxis = {
+           name: "Hours viewed/\n100000",
+           nameTextStyle: {
+            fontWeight: "bolder"
+           },
+           pos: '50%'
+        }
+
         option2.series = [
 
             {
@@ -360,10 +384,16 @@ var option3 = {
   xAxis: {
     type: 'category',
     boundaryGap: false,
-    data: []
+    data: [],
+    nameTextStyle: {
+        fontWeight: "bolder"
+    }
   },
   yAxis: {
-    type: 'value'
+    type: 'value',
+    nameTextStyle: {
+       fontWeight: "bolder"
+    }
   },
   series: [
   {
@@ -393,7 +423,8 @@ fetch("data\\top_5_movie_genres_by_tickets.json")
         option3.title = {
             text: json.text,
             subtext: json.link,
-            sublink: json.link
+            sublink: json.link,
+            left: 'center'
         }
 
         option3.series = genres_by_tickets;
