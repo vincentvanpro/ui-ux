@@ -9,11 +9,6 @@ var myChart4 = echarts.init(chartDom4);
 
 
 option = {
-  title: {
-    text: 'Share of streaming services by subscribers in 2021',
-    subtext: 'https://mediapeanut.com/streaming-statistics/',
-    sublink: 'https://mediapeanut.com/streaming-statistics/'
-  },
   tooltip: {
     trigger: 'item'
   },
@@ -24,29 +19,47 @@ option = {
   },
   series: [
     {
-      name: 'Streaming service',
-      type: 'pie',
-      radius: '50%',
-      data: [
-        { value: 214000000, name: 'Netflix' },
-        { value: 175000000, name: 'Amazon' },
-        { value: 118000000, name: 'Disney+' },
-        { value: 39700000, name: 'Hulu' },
-        { value: 54000000, name: 'Peacock' },
-        { value: 69000000, name: 'HBO' }
-      ],
-      emphasis: {
-        itemStyle: {
-          shadowBlur: 10,
-          shadowOffsetX: 0,
-          shadowColor: 'rgba(0, 0, 0, 0.5)'
+        data: [],
+        emphasis: {
+            itemStyle: {
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
         }
-      }
     }
   ]
 };
 
-myChart.setOption(option);
+var option = JSON.parse(JSON.stringify(option))
+fetch("data\\leading_streaming_platforms.json")
+    .then(response => response.json())
+    .then(json => {
+        let data = json.data;
+        let service_by_subscribers = [];
+
+        data.forEach(item => {
+            service_by_subscribers.push({value: item["subscribers"], name: item["streaming service"]});
+        })
+
+        option.title = {
+            text: json.text,
+            subtext: json.link,
+            sublink: json.link
+        }
+
+        option.series = [
+            {
+                name: 'Streaming service',
+                type: 'pie',
+                radius: '50%',
+                data: service_by_subscribers
+            }
+        ]
+
+        myChart.setOption(option);
+
+    })
 
 
 option1 = {
@@ -77,6 +90,7 @@ option1 = {
     ]
 }
 
+
 fetch("data\\world.json")
     .then(response => response.json())
     .then(json => {
@@ -98,10 +112,6 @@ fetch("data\\world.json")
             },
             emphasis:{
                 label:{show:true}
-                // shadowOffsetX: 0,
-                // shadowOffsetY: 0,
-                // shadowBlur: 20,
-                // shadowColor: 'rgba(0, 0, 0, 0.3)'
             }
         };
 
@@ -130,17 +140,6 @@ fetch("data\\world.json")
                         sublink: json.link,
                         left: 'center',
                     },
-                    /*toolbox: {
-                        show: true,
-                        //orient: 'vertical',
-                        left: 'left',
-                        top: 'top',
-                        feature: {
-                            dataView: { readOnly: false },
-                            restore: {},
-                            saveAsImage: {}
-                        }
-                    },*/
                     tooltip: {
                         trigger: 'item',
                         formatter: function (params) {
@@ -227,8 +226,6 @@ fetch("data\\subscribers.json")
             }
         }
 
-        // console.log(books_data_by_years)
-
         option1.xAxis = {data: years, name: 'year'}
         option1.yAxis = {name: 'subscribers (millions)'}
         option1.grid = {
@@ -288,8 +285,7 @@ fetch("data\\hours_viewed_in_first_28_days.json")
         let films = [];
         let tvSeries = [];
         let all =[]
-        // console.log(data);
-        // console.log(Object.keys(json))
+
         data.forEach(item => {
             if (typeof item.MovieName !== "undefined") {
                 labels.push(item.MovieName);
@@ -309,7 +305,6 @@ fetch("data\\hours_viewed_in_first_28_days.json")
             text: 'The Top 10 most popular TV (English), \nbased on hours viewed in their first 28 days.',
             subtext: json.link,
             sublink: json.link,
-            // left: 'right'
             top: '1.5%'
         }
         option2.tooltip = {
@@ -353,11 +348,6 @@ fetch("data\\hours_viewed_in_first_28_days.json")
 
 
 var option3 = {
-  title: {
-    text: 'Top 5 movie genres by tickets grossing \nbetween 2020 and 2022 years',
-    subtext: "https://www.the-numbers.com/market/",
-    sublink: "https://www.the-numbers.com/market/"
-  },
   tooltip: {
     trigger: 'axis'
   },
@@ -370,57 +360,49 @@ var option3 = {
   xAxis: {
     type: 'category',
     boundaryGap: false,
-    data: ['2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022'],
-    name: "Year"
+    data: []
   },
   yAxis: {
-    type: 'value',
-    name: "Number of tickets"
+    type: 'value'
   },
   series: [
-    {
-      name: 'Adventure',
-      type: 'line',
-      smooth: true,
-      data: [367661045, 483468157, 303036646, 326672973, 417538823, 76612144, 85974897, 63387897]
-    },
-    {
-      name: 'Action',
-      type: 'line',
-      smooth: true,
-      data: [360271933, 285656773, 367630855, 452053536, 316329127, 46852981, 255234837, 112192515]
-    },
-    {
-      name: 'Thriller/Suspense',
-      type: 'line',
-      smooth: true,
-      data: [106626152, 92215165, null, null, 123026805, 28739655]
-    },
-    {
-      name: 'Horror',
-      type: 'line',
-      smooth: true,
-      data: [null, null, 123651291, 93417615, 88483577, 26930298, 63313994, 11251694]
-    },
-    {
-      name: 'Drama',
-      type: 'line',
-      smooth: true,
-      data: [245574422, 141071778, 147964974, 177635237, 151412394, 26230346 , 25542590, 14453436]
-    },
-    {
-      name: 'Comedy',
-      type: 'line',
-      smooth: true,
-      data: [146584641, 158413985, null, 89269172, null, null, 39354106 , 14369547]
-    },
-    {
-      name: 'Musical',
-      type: 'line',
-      smooth: true,
-      data: [null, null, 99237710]
-    }
-  ]
+  {
+    data:[]
+  }]
 };
 
-myChart4.setOption(option3);
+
+var option3 = JSON.parse(JSON.stringify(option3))
+fetch("data\\top_5_movie_genres_by_tickets.json")
+    .then(response => response.json())
+    .then(json => {
+        let data = json.data;
+        let genres_by_tickets = [];
+        let years = new Set();
+        let tickets = [];
+
+        data.forEach(item => {
+            genres_by_tickets.push({name: item["genre"], type: 'line', smooth: true, data: Object.values(item).slice(0, -1)});
+            for (key in item) {
+                if (key != "genre") {
+                    years.add(key);
+                }
+            }
+        })
+
+        option3.title = {
+            text: json.text,
+            subtext: json.link,
+            sublink: json.link
+        }
+
+        option3.series = genres_by_tickets;
+
+        option3.xAxis.data = Array.from(years);
+        option3.xAxis.name = "Year";
+
+        option3.yAxis.name = "Number of tickets";
+
+        myChart4.setOption(option3);
+
+    })

@@ -1,0 +1,12 @@
+{
+  "data": [
+    {"streaming service": "Netflix", "subscribers": 214000000},
+    {"streaming service":"Amazon", "subscribers": 175000000},
+    {"streaming service":"Disney+", "subscribers": 118000000},
+    {"streaming service":"Hulu", "subscribers": 39700000},
+    {"streaming service":"Peacock", "subscribers":54000000},
+    {"streaming service":"HBO", "subscribers": 69000000}
+  ],
+  "text": "Share of streaming services by subscribers in 2021",
+  "link": "https://mediapeanut.com/streaming-statistics/"
+}
