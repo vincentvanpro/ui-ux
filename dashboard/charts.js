@@ -12,6 +12,7 @@ option = {
   tooltip: {
     trigger: 'item'
   },
+  color: ["#E15435", "#FEBC59", "#7495B4", "#94B47B", "#646861", "#3B3A3A"],
   legend: {
     orient: 'vertical',
     left: 'right',
@@ -70,12 +71,11 @@ option1 = {
             type: 'shadow'
         }
     },
-
-
+    color: ["#65A0C0"],
     legend: {
         orient: 'vertical',
-        left: 'left',
-        top: '8%'
+        left: '78%',
+        top: '15%'
     },
     xAxis: {
         data: [],
@@ -259,9 +259,10 @@ fetch("data\\subscribers.json")
 option2 = {
     legend: {
         orient: 'vertical',
-        left: 'left',
-        top: '10%'
+        left: 'right',
+        top: '50%'
     },
+    color: ["#eac392", "#9cba8f"],
     xAxis: {
         type: 'value',
         boundaryGap: [0, 0.01]
@@ -362,7 +363,7 @@ fetch("data\\hours_viewed_in_first_28_days.json")
         ]
 
         option2.grid = {
-            top: '25%',
+            top: '15%',
             bottom: '3%',
             containLabel: true
         }
@@ -373,7 +374,8 @@ fetch("data\\hours_viewed_in_first_28_days.json")
 
 var option3 = {
   tooltip: {
-    trigger: 'axis'
+    trigger: 'axis',
+    bodyAlign: 'left'
   },
   grid: {
     top: '20%',
