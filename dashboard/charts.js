@@ -10,7 +10,8 @@ var myChart4 = echarts.init(chartDom4);
 
 option = {
   tooltip: {
-    trigger: 'item'
+      trigger: 'item',
+      formatter: '{a} <br/>{b} : {c} million ({d}%)'
   },
   color: ["#E15435", "#FEBC59", "#7495B4", "#94B47B", "#646861", "#3B3A3A"],
   legend: {
@@ -40,7 +41,7 @@ fetch("data\\leading_streaming_platforms.json")
         let service_by_subscribers = [];
 
         data.forEach(item => {
-            service_by_subscribers.push({value: item["subscribers"], name: item["streaming service"]});
+            service_by_subscribers.push({value: Math.floor(item["subscribers"] / 1000000), name: item["streaming service"]});
         })
 
         option.title = {
@@ -50,14 +51,13 @@ fetch("data\\leading_streaming_platforms.json")
             left: 'center'
         }
 
-        option.series = [
-            {
-                name: 'Streaming service',
-                type: 'pie',
-                radius: '50%',
-                data: service_by_subscribers
-            }
-        ]
+
+        option.series = [ {
+            name: 'Streaming service',
+            type: 'pie',
+            radius: '50%',
+            data: service_by_subscribers,
+        } ]
 
         myChart.setOption(option);
 
@@ -73,7 +73,6 @@ option1 = {
     },
     color: ["#65A0C0"],
     legend: {
-        orient: 'vertical',
         left: '78%',
         top: '15%'
     },
@@ -160,11 +159,11 @@ fetch("data\\world.json")
                                 color: [
                                     '#ea0001',
                                     '#f59303',
-                                    '#017ca2',
-                                    '#301244',
-                                    '#49c04b',
-                                    '#b16fea',
+                                    '#154aa0',
+                                    '#572580',
                                     '#6feabb',
+                                    '#00c133',
+                                    '#f37595',
                                     'grey',
                                 ]
                             },
@@ -211,7 +210,7 @@ fetch("data\\subscribers.json")
             years.push(item.QYear);
         })
         option1.title = {
-            text: 'Annual subscribers (Q2 of each respective year)',
+            text: 'Annual Netflix Subscribers (Q2 of each respective year)',
             subtext: json.link,
             sublink: json.link,
             left: 'center'
@@ -259,8 +258,8 @@ fetch("data\\subscribers.json")
 option2 = {
     legend: {
         orient: 'vertical',
-        left: 'right',
-        top: '50%'
+        left: '85%',
+        top: '10%'
     },
     color: ["#eac392", "#9cba8f"],
     xAxis: {
@@ -301,20 +300,20 @@ fetch("data\\hours_viewed_in_first_28_days.json")
         data.forEach(item => {
             if (typeof item.MovieName !== "undefined") {
                 labels.push(item.MovieName);
-                films.push(Math.floor(item.HoursViewedEng / 100000));
+                films.push(Math.floor(item.HoursViewedEng / 1000000));
                 tvSeries.push('-');
-                all.push(item.HoursViewedEng);
+                all.push(Math.floor(item.HoursViewedEng / 1000000));
             } else if (typeof item.SeriesName !== "undefined") {
                 labels.push(item.SeriesName);
-                tvSeries.push(Math.floor(item.HoursViewedEng / 100000));
+                tvSeries.push(Math.floor(item.HoursViewedEng / 1000000));
                 films.push('-');
-                all.push(item.HoursViewedEng);
+                all.push(Math.floor(item.HoursViewedEng / 1000000));
             }
 
 
         })
         option2.title = {
-            text: 'The Top 10 most popular TV (English), based on hours viewed in their first 28 days',
+            text: 'The Top 10 most popular Films/TV (English), based on hours viewed in their first 28 days',
             subtext: json.link,
             sublink: json.link,
             left: 'center'
@@ -327,7 +326,7 @@ fetch("data\\hours_viewed_in_first_28_days.json")
             formatter: function (params) {
                 console.log(params[0])
                 var tar = params[0];
-                return tar.name + '<br/>' + all[tar.dataIndex] + ' hours viewed';
+                return tar.name + '<br/>' + all[tar.dataIndex] + ' million hours viewed';
             }
         }
 
@@ -340,7 +339,7 @@ fetch("data\\hours_viewed_in_first_28_days.json")
         }
 
         option2.xAxis = {
-           name: "Hours viewed/\n100000",
+           name: "Hours viewed \n (millions)",
            nameTextStyle: {
             fontWeight: "bolder"
            },
@@ -363,8 +362,9 @@ fetch("data\\hours_viewed_in_first_28_days.json")
         ]
 
         option2.grid = {
-            top: '15%',
+            top: '25%',
             bottom: '3%',
+            left: '3%',
             containLabel: true
         }
         myChart3.setOption(option2)
@@ -379,10 +379,13 @@ var option3 = {
   },
   grid: {
     top: '20%',
-    left: '3%',
+    left: '7%',
     bottom: '3%',
     containLabel: true
   },
+    legend: {
+      top: '10%'
+    },
   xAxis: {
     type: 'category',
     boundaryGap: false,
@@ -421,6 +424,14 @@ fetch("data\\top_5_movie_genres_by_tickets.json")
                 }
             }
         })
+        genres_by_tickets.forEach(item => {
+            console.log(item.data)
+            item.data.forEach(function(part, index, theArray) {
+                console.log(part)
+                theArray[index] = Math.floor(part / 1000000);
+                })
+        });
+        console.log(genres_by_tickets)
 
         option3.title = {
             text: json.text,
@@ -434,7 +445,7 @@ fetch("data\\top_5_movie_genres_by_tickets.json")
         option3.xAxis.data = Array.from(years);
         option3.xAxis.name = "Year";
 
-        option3.yAxis.name = "Number of tickets";
+        option3.yAxis.name = "Number of tickets (millions)";
 
         myChart4.setOption(option3);
 
