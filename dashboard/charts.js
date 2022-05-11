@@ -408,7 +408,7 @@ var option3 = {
 
 
 var option3 = JSON.parse(JSON.stringify(option3))
-fetch("data\\top_5_movie_genres_by_tickets.json")
+fetch("data\\movie_genres_by_tickets.json")
     .then(response => response.json())
     .then(json => {
         let data = json.data;
