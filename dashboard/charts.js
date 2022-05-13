@@ -143,7 +143,6 @@ fetch("data\\world.json")
                     tooltip: {
                         trigger: 'item',
                         formatter: function (params) {
-                            console.log(params)
                             return params.seriesName + '<br/>' + params.name + ': '+ streamingDict[data[params.dataIndex].value];
                         }
                     },
@@ -324,7 +323,6 @@ fetch("data\\hours_viewed_in_first_28_days.json")
                 type: 'shadow'
             },
             formatter: function (params) {
-                console.log(params[0])
                 var tar = params[0];
                 return tar.name + '<br/>' + all[tar.dataIndex] + ' million hours viewed';
             }
@@ -369,7 +367,7 @@ fetch("data\\hours_viewed_in_first_28_days.json")
         }
         myChart3.setOption(option2)
 
-    }).catch(error => console.error(error))
+    })//.catch(error => console.error(error))
 
 
 var option3 = {
@@ -425,13 +423,10 @@ fetch("data\\movie_genres_by_tickets.json")
             }
         })
         genres_by_tickets.forEach(item => {
-            console.log(item.data)
             item.data.forEach(function(part, index, theArray) {
-                console.log(part)
                 theArray[index] = Math.floor(part / 1000000);
                 })
         });
-        console.log(genres_by_tickets)
 
         option3.title = {
             text: json.text,
